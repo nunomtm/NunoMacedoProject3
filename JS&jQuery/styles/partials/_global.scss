@@ -1,0 +1,124 @@
+// Testille Project Global Styles Starts Here
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $baseFont;
+    font-family: $secondaryFont;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+    color: $tertiaryFontColor;
+}
+
+h2 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 5.8rem;
+    line-height: 68px;
+    color: $primeryFontColor;
+    max-width: 55%;
+}
+
+h3 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 4.3rem;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+    color: $primeryFontColor;
+    margin: 10px 0 5px 0;
+}
+
+h4 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+    color: $secondaryFontColor;
+}
+
+h5 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 4.3px;
+    color: $tertiaryFontColor;
+}
+
+h6 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 3.5rem;
+    letter-spacing: 2.9px;
+    color: $secondaryFontColor;
+}
+
+p {
+    font-family: $secondaryFont;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.button {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 2.7rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+    padding: 5px 30px;
+    color: $secondaryFontColor;
+}
+
+.checkbox-trigger {
+    margin-top: -100px;
+}
+
+/* Skip-line for accessibility */
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: $secondaryFontColor;
+  color: $tertiaryFontColor;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+/* - */
+

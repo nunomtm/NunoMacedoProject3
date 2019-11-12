@@ -1,0 +1,637 @@
+// Header Responsive Starts Here
+@include mqTablet {
+    header {
+        background-position: 45% 100%;
+        min-height: 75vh;
+    }
+    .headline {
+        font-size: 4.8rem;
+    }
+    .navContainer {
+        .mainNav ul li {
+            display: none;
+        }
+    }
+
+    // Mobile menu
+    .mobileNav {
+        display: block;
+    }
+    ul.nav {
+        background: $primeryFontColor;
+        position: fixed;
+        z-index: 10;
+        width: 170px;
+        right: -170px;    
+        height: 30%;
+        top: 7%;
+        transition: all 0.5s;
+    }
+    ul.nav a {
+        font-family: $secondaryFont;
+        font-size: 2.5rem;
+        color: $secondaryFontColor;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s;
+    }
+    ul.nav a:hover,
+    ul.nav a:focus {
+        background: $secondaryBackgroundColor;
+        border-bottom: 3px solid;
+    }
+    input[type="checkbox"]:checked + ul.nav {
+        right: 0;
+    }
+    input[type="checkbox"] {
+        display: none;  
+    }
+    label[for="toggleMenu"] {
+        position: fixed;
+        top: 10px;
+        left: 90%;
+        color: $tertiaryFontColor;
+        z-index: 10;
+    }
+    .mobileNav i {
+        font-size: 4rem;
+    }
+    // End of mobile menu
+}
+
+@media (max-width: 530px) {
+    header {
+        background-position: 50% 100%;
+        min-height: 70vh;
+    }
+    .headline {
+        font-size: 3.8rem;
+    }
+}
+
+@include mqMobile {
+    header {
+        min-height: 55vh;
+    }
+    .headline {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .headline {
+        font-size: 2.5rem;
+    }
+}
+// Header Responsive Ends Here
+
+
+// Main Responsive Starts Here
+@media (max-width: 1220px) {
+    .techniques {
+        max-width: 75%;
+    }
+}
+
+@include mqDesktop {
+    .learn {
+        max-width: 100%;
+        img {
+            right: 35%;
+            top: 180px;
+        }
+    }
+    .techniques {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        .title {
+            text-align: center;
+            margin-top: 410px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .events,
+    .blog,
+    .community,
+    .inTouch {
+        h3 {
+            font-size: 3.4rem;
+        }
+    }
+    .eventsPost,
+    .blogPost,
+    .communityPost,
+    .inTouchPost {
+        margin-left: 20%;
+    }
+    .discover {
+        .discoverContainer {
+            .title {
+                text-align: center;
+                margin: 0;
+                padding-top: 50%;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+            }
+            img {
+                width: 60%;
+                top: -8%;
+            }
+            .button {
+                margin-left: 38%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .title {
+                text-align: center;
+                margin: 0;
+                padding-top: 60%;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+            }
+            .button {
+                margin-left: 35.5%;
+            }  
+            img {
+                width: 60%;
+                top: 4%;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {  
+    .techniques {
+        .title {
+            margin-top: 430px;
+        }
+    }
+    .posts {
+        .knowMore {
+            flex-direction: column;
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -10%;
+            }
+        }
+    }
+}
+
+@include mqTablet {
+    .learn {
+        margin-left: 10%;
+        .scissor {
+            width: 70%;
+            top: -290px;
+        }
+        figure img {
+            left: 28%;
+        }
+        .button {
+            width: 45%;
+            margin-left: 28%;
+        }
+    }
+    .gallery {
+        .galleryContainer {
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin-right: 0;
+            }
+        }
+    }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -12%;
+            }
+        }
+    }
+    .discover {
+        .discoverContainer {
+            .button {
+                margin-left: 35%;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .learn {
+        .scissor {
+            top: -245px;
+        }
+    }
+}
+
+@include mqMobile {
+    header {
+        .title {
+            font-size: 3.8rem;
+        }
+    }
+    .learn {
+        .scissor {
+            width: 70%;
+            top: -190px;
+        }
+        .title {
+            font-size: 3.2rem;
+            width: 100%;
+        }
+        figure img {
+            top: 2%;
+            left: 20%;
+        }
+        .button {
+            width: 60%;
+            margin-left: 15%;
+        }
+    }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -18%;
+                margin-left: 22%;
+            }
+        }
+    }
+    .discover {
+        .discoverContainer {
+            .button {
+                margin-left: 25%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .button {
+                margin-left: 25%;
+            }
+        }
+    }
+}
+
+@include mqMobilePlus {
+    ul.nav {
+        height: 32%;
+    }
+    .learn {
+        .title {
+            font-size: 3.1rem;
+        }
+        .scissor {
+            top: -170px;
+        }
+        figure img {
+            left: 15%;
+        }
+        .button {
+            width: 70%;
+            margin-left: 10%;
+        }
+    }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -22%;
+                margin-left: 25%;
+            }
+        }
+    }
+    .discover {
+        .discoverContainer {
+            .title {
+                font-size: 3rem;
+                padding-top: 70%;
+            }
+            img {
+                width: 100%;
+                top: -8;
+            }
+            .button {
+                margin-left: 20%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .title {
+                font-size: 3rem;
+                padding-top: 90%;
+            }
+            img {
+                width: 100%;
+                top: 0;
+            }
+            .button {
+                margin-left: 25%;
+            }
+        }
+    }
+    .search {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+}
+
+@include mqMobileX {
+    ul.nav {
+        height: 36%;
+    }
+    header {
+        .headline {
+            font-size: 3rem;
+        }
+    }
+    .learn {
+        .title {
+            font-size: 2.8rem;
+        }
+        .scissor {
+            top: -130px;
+        }
+        .button {
+            margin-left: 9%;
+            width: 76%;
+        }
+    }
+    .search {
+        .button {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include mqMobileSE {
+    .learn figure img {
+        max-width: 74%;
+        top: 1%;
+        left: 16%;
+    }
+    .techniques {
+        .title {
+            margin-top: 310px;
+        }
+    }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -28%;
+                margin-left: 28%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .button {
+                margin-left: 20%;
+            }
+        }
+    } 
+        
+    .search {
+        padding: 0;
+        padding-bottom: 40px;
+        .title {
+            font-size: 3rem;
+        }
+        .button {
+            font-size: 2rem;
+        }
+    }
+}
+// Main Responsive Endss Here
+
+
+// Blog Page Responsive Starts Here
+@include mqDesktop {
+    .blogHeader {
+        min-height: 55vh;
+    }
+    .blogHeader img {
+        width: 58%;
+    }
+    .aside {
+        width: 30%;
+        height: 29%;
+        padding-top: 35%;
+    }
+    .newsletter input[type="text"],
+    .newsletter input[type="email"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .blogHeader img {
+        width: 82.8%;
+    }
+    .newCollection {
+        padding-top: 40%;
+        max-width: 100%;
+    }
+    .aside {
+        display: none;
+    }
+    blockquote {
+        width: 75%;
+    }
+    .newsletter {
+        max-width: 100%;
+    }
+    .newsletter input[type="text"],
+    .newsletter input[type="email"],
+    textarea {
+        width: 100%;
+    }
+}
+
+@include mqTablet { 
+    .blogHeader img {
+        width: 82.4%;
+    }
+    ul.nav {
+        height: 24%;
+    }
+}
+
+@include mqMobile {
+    .blogHeader {
+        img {
+            width: 80.8%;
+        }
+        .headline {
+            font-size: 4.8rem;
+        }
+    }
+    .newCollection {
+        padding-top: 32%;
+        h3 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@include mqMobilePlus {
+    .newCollection h3 {
+        font-size: 3rem;
+    }
+}
+
+@include mqMobileSE {
+    .blogHeader img {
+        width: 94%;
+    }
+    .newCollection {
+        padding-top: 40%;
+        max-width: 100%;
+        h3 {
+            font-size: 2.4rem;
+        }
+        p.postDate {
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .blogComments {
+        flex-direction: column;
+        blockquote {
+            width: 95%;
+            margin-left: 0;
+            p.postDate {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .newsletter {
+        max-width: 100%;
+    }
+    .button {
+        font-size: 2rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+    }
+}
+// Blog Page Responsive Ends Here
+
+
+// Contact Page Responsive Starts Here
+@media (max-width: 1275px) {
+    .messageUs {
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+        }
+    } 
+}
+
+@include mqTablet {
+    ul.nav {
+        height: 32%;
+    }
+    .contactHeader {
+        min-height: 60vh;
+    }
+    .mainNav ul {
+        display: none;
+    }
+    .messageUs {
+        height: 75%;
+        width: 80%;
+    }
+    .contacts {
+        top: 55%;
+        right: 10%;
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@include mqMobile {
+    ul.nav {
+        height: 30%;
+    }
+    .contactHeader {
+        .headline {
+            font-size: 4.8rem;
+        }
+    }
+        
+}
+
+@include mqMobilePlus {
+    ul.nav {
+        height: 31%;
+    }
+}
+
+@include mqMobileX {
+    ul.nav {
+        height: 35%;
+    }
+    .contactHeader {
+        .headline {
+            font-size: 4.5rem;
+        }
+    }
+    .contacts {
+        top: 50%;
+        right: 5%;
+        width: 70%;
+    }
+}
+
+@include mqMobileSE {
+    ul.nav {
+        height: 42%;
+    }
+    main {
+        min-height: 80vh;
+    }
+    .getInTouch {
+        height: 85vh;
+    }
+    .contacts {
+        font-size: 1.6rem;
+    }
+    footer p {
+    font-size: 1.4rem;
+    }
+}
+// Contact Page Responsive Ends Here

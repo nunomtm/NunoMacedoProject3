@@ -1,3 +1,14 @@
+Pseudo Code
+
+- My ideia is to have a one page website where the theme will be to get some Jedi Wisdom from Master Yoda.
+
+- The way I envision the website to work is you have two or three questions wich the user will have to select from two option and based on the input from the user Master Yoda will provide them a piece of wisdom.
+
+
+
+
+
+
 Requirements:
 
 - [] It is clear to the user what the app does
