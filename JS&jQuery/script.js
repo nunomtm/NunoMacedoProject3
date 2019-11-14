@@ -18,96 +18,108 @@ const rebel = {
     jedi: [
         {
             quote: 'May the Force be with you.',
-            type: 'resistance'
+            type: 'resistance',
+            color: 'blue'
         },
         {
             quote: 'Train yourself to let go of everything you fear to lose.',
-            type: 'resistance'
+            type: 'resistance',
+            color: 'blue'
         },
         {
             quote: 'You will know (the good from the bad) when you are calm, at peace. Passive. A Jedi uses the Force for knowledge and defense, never for attack.',
-            type: 'resistance'
+            type: 'resistance',
+            color: 'blue'
         },
         {
             quote: 'Do or do not. There is no try.',
-            type: 'resistance'
+            type: 'resistance',
+            color: 'blue'
         },
         {
             quote: 'Much to learn you still have…my old padawan.” … “This is just the beginning!',
-            type: 'resistance'
+            type: 'resistance',
+            color: 'blue'
+        },
+        {
+            quote: 'PATIENCE YOU MUST HAVE my young padawan.',
+            type: 'resistance',
+            color: 'red'
+        },
+        {
+            quote: 'If you end your training now — if you choose the quick and easy path as Vader did — you will become an agent of evil.',
+            type: 'resistance',
+            color: 'red'
+        },
+        {
+            quote: 'In a dark place we find ourselves, and a little more knowledge lights our way.',
+            type: 'resistance',
+            color: 'red'
+        },
+        {
+            quote: 'When you look at the dark side, careful you must be. For the dark side looks back.',
+            type: 'resistance',
+            color: 'red'
+        },
+        {
+            quote: 'Always two there are, no more, no less. A master and an apprentice.',
+            type: 'resistance',
+            color: 'red'
         },
     ],
     vader: [
         {
             quote: 'Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.',
-            type: 'dark side'
+            type: 'dark side',
+            color: 'red'
         },
         {
             quote: 'Powerful you have become, the dark side I sense in you.',
-            type: 'dark side'
+            type: 'dark side',
+            color: 'red'
         },
         {
             quote: 'You must unlearn what you have learned.',
-            type: 'dark side'
+            type: 'dark side',
+            color: 'red'
         },
         {
             quote: 'The fear of loss is a path to the Dark Side.',
-            type: 'dark side'
+            type: 'dark side',
+            color: 'red'
         },
         {
             quote: 'If into the security recordings you go, only pain will you find.',
-            type: 'dark side'
+            type: 'dark side',
+            color: 'red'
+        },
+        {
+            quote: 'Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.',
+            type: 'dark side',
+            color: 'blue'
+        },
+        {
+            quote: 'Once you start down the dark path, forever will it dominate your destiny, consume you it will.',
+            type: 'dark side',
+            color: 'blue'
+        },
+        {
+            quote: 'The dark side clouds everything. Impossible to see the future is.',
+            type: 'dark side',
+            color: 'blue'
+        },
+        {
+            quote: 'Not if anything to say about it I have.',
+            type: 'dark side',
+            color: 'blue'
+        },
+        {
+            quote: 'Only the Dark Lord of the Sith knows of our weakness. If informed the senate is, multiply our adversaries will.',
+            type: 'dark side',
+            color: 'blue'
         },
     ]
 };
-
-// const dark = {
-//     blue: [
-//         {
-//             quote: 'PATIENCE YOU MUST HAVE my young padawan.',
-//             type: 'resistance'
-//         },
-//         {
-//             quote: 'If you end your training now — if you choose the quick and easy path as Vader did — you will become an agent of evil.',
-//             type: 'resistance'
-//         },
-//         {
-//             quote: 'In a dark place we find ourselves, and a little more knowledge lights our way.',
-//             type: 'resistance'
-//         },
-//         {
-//             quote: 'When you look at the dark side, careful you must be. For the dark side looks back.',
-//             type: 'resistance'
-//         },
-//         {
-//             quote: 'Always two there are, no more, no less. A master and an apprentice.',
-//             type: 'resistance'
-//         },
-//     ],
-//     red: [
-//         {
-//             quote: 'Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.',
-//             type: 'dark side'
-//         },
-//         {
-//             quote: 'Once you start down the dark path, forever will it dominate your destiny, consume you it will.',
-//             type: 'dark side'
-//         },
-//         {
-//             quote: 'The dark side clouds everything. Impossible to see the future is.',
-//             type: 'dark side'
-//         },
-//         {
-//             quote: 'Not if anything to say about it I have.',
-//             type: 'dark side'
-//         },
-//         {
-//             quote: 'Only the Dark Lord of the Sith knows of our weakness. If informed the senate is, multiply our adversaries will.',
-//             type: 'dark side'
-//         },
-//     ]
-// };
-
 
 
 // The function will start here
@@ -115,55 +127,25 @@ $(function() {
 
     function randomQuote(optionArray) {
         const item = Math.floor(Math.random() * optionArray.length);
-        console.log(optionArray);
         return optionArray[item];
     }
 
     $("form").on("submit", function(e) {
         e.preventDefault();
         const joinOption = $('input[name=join]:checked').val();
-        // console.log(joinOption)
         const saberOption = $('input[name=saber]:checked').val();
-        // console.log(saberOption)
 
         const selection = rebel[joinOption];
-        // console.log(selection)
         const option = rebel[joinOption];
-
-        // for(let i = 0; i < selection.length; i++) {
-        //     // console.log(selection[i]);
-        //     const yoda = selection[i];
-
-        //     if(yoda.type === joinOption) {
-        //         option.push(yoda)
-        //     }
-        // }
-        
-        // console.log(option);
-        const quoteToDisplay = randomQuote(option);
+        const color = selection.filter((choice) => {
+            if(choice.color === saberOption) {
+                return true;
+            }
+        });
+    
+        const quoteToDisplay = randomQuote(color);
 
         $('.quote').html(`<p class="quote">${quoteToDisplay.quote}</p>`)
 
     });  
 });
-
-
-        //Second Option
-
-        // const joinSelection = $(joinOption).attr('value');
-        // const saberSelection = $(saberOption).attr('value');
-
-        // const choice = rebel[joinSelection];
-        // const option = [];
-
-        // for(let i = 0; i < choice.length; i++) {
-        //     const yoda = choice[i];
-
-        //     if(yoda.joinSelection === joinSelection) {
-        //         option.push(yoda)
-        //     }
-        // }
-
-        // const quoteToDisplay = randomQuote(option);
-
-        // $('.quote').html(`<p class="selection">${quoteToDisplay.quote}</p>`)
