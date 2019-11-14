@@ -5,5 +5,7 @@ $secondaryFontColor: #ffffff;
 // Background Color
 $baseBackgroundColor: #000;
 
-// Font Families
-// $baseFont: 
+@font-face {
+    font-family: "StarWars";
+    src: url(../Font/starWarsFont.ttf) format("truetype");
+}

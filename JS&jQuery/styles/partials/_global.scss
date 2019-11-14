@@ -5,6 +5,7 @@ html {
 
 body {
     margin: 0 auto;
+    background-color: black;
 }
 
 .wrapper {
@@ -20,15 +21,14 @@ img {
 
 h1,
 p,
-label {
-    @font-face {
-        font-family: sans-serif;
-        src: url(/starWarsJediFont/Starjedi.ttf);
-    }
+label,
+input {
+    font-family: "StarWars";
+    letter-spacing: 2.5px;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #fee91c;
     text-align: center;
     text-transform: uppercase;

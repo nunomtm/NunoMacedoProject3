@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "StarWars";
+  src: url(../Font/starWarsFont.ttf) format("truetype");
+}
+
 Testille Project Global Styles Starts Here
 html {
   font-size: 62.5%;
@@ -242,6 +247,7 @@ html {
 
 body {
   margin: 0 auto;
+  background-color: black;
 }
 
 .wrapper {
@@ -255,17 +261,16 @@ img {
   display: block;
 }
 
-@font-face {
-  h1,
-  p,
-  label {
-    font-family: sans-serif;
-    src: url(/starWarsJediFont/Starjedi.ttf);
-  }
+h1,
+p,
+label,
+input {
+  font-family: "StarWars";
+  letter-spacing: 2.5px;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: #fee91c;
   text-align: center;
   text-transform: uppercase;
@@ -286,17 +291,6 @@ h1 {
 }
 
 /* - */
-body {
-  background-color: black;
-  font-size: 62.5%;
-}
-
-.wrapper {
-  max-width: 1080px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 header {
   background-image: url(../assets/starWarsBackgrounds.jpg);
   background-size: cover;
@@ -352,7 +346,7 @@ h1 {
 }
 
 .join,
-.lightsaber {
+.saber {
   background: black;
   color: #fee91c;
   padding: 5%;
@@ -364,15 +358,14 @@ h1 {
 
 .submit {
   padding: 80px 0;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 input[type=submit] {
   background: #fee91c;
-  padding: 15px 25px;
+  padding: 10px 20px;
   border: none;
-  font-weight: bold;
 }
 
 input[type=submit]:hover,
@@ -397,12 +390,28 @@ input[type=radio] {
   margin-right: 10px;
 }
 
-.quote {
-  padding-top: 50px;
+.wisdom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.quote img {
+.wisdom img {
   padding-bottom: 50px;
+}
+
+.quote {
+  margin: 0 auto;
+  width: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote {
+  font-size: 2rem;
+  color: #fee91c;
+  text-align: center;
 }
 
 footer {
@@ -419,6 +428,6 @@ footer {
 }
 
 footer p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #fee91c;
 }
