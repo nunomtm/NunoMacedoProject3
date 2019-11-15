@@ -69,14 +69,16 @@ h1 {
 
 .submit {
   padding: 80px 0;
-  font-size: 1.4rem;
-	text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 input[type=submit] {
-	background: #fee91c;
+  background: #fee91c;
 	padding: 10px 20px;
-	border: none;
+  border: none;
+  border: 1px solid transparent;
+  transition: 0.35s;
 }
 
 input[type=submit]:hover, 
@@ -103,22 +105,25 @@ input[type=radio] {
 
 .wisdom {
   display: flex;
-}
-
-.wisdom img {
-  padding-bottom: 50px;
-}
-
-.quote {
-  margin: 0 auto;
-  width: 500px;
-  justify-content: center;
+  margin-bottom: 50px;
+  height: 300px;
 }
 
 .quote {
+  font-family: 'Kanit', sans-serif;
   font-size: 2rem;
-  color: #fee91c;
   text-align: center;
+  color: #fee91c;
+  align-self: center;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 40px 40px 40px 0;
+  box-shadow: 10px 10px 15px #fee91c;
+  border: 2px solid #fee91c;
+}
+
+.quote p {
+  padding: 10px;
 }
 
 footer {
@@ -131,7 +136,7 @@ footer {
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #fee91c;
 
 }

@@ -1,6 +1,11 @@
 Testille Project Global Styles Starts Here
+
 html {
     font-size: 62.5%;
+}
+
+* {
+    cursor: url(../assets/mouseLightSaber.png), auto;
 }
 
 body {
@@ -19,12 +24,20 @@ img {
     display: block;
 }
 
-h1,
+h1 {
+    font-family: "StarWars";
+    letter-spacing: 5.5px;
+}
+
+input[type=submit] {
+    font-family: "StarWars";
+    letter-spacing: 3px;
+}
+
 p,
 label,
 input {
-    font-family: "StarWars";
-    letter-spacing: 2.5px;
+    font-family: 'Kanit', sans-serif;
 }
 
 h1 {
