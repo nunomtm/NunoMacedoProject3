@@ -1,0 +1,47 @@
+.join,
+.saber {
+    background: black;
+    color: #fee91c;
+	padding: 5%;
+	margin: 0;
+    border: none;
+    border-bottom: 1px solid red;
+	text-align: center;
+}
+
+form p,
+label {
+	font-size: 25px;
+	color: #fee91c;
+	margin-top: 0;
+}
+
+label {
+    margin-right: 30px;
+}
+
+.submit {
+    padding: 80px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input[type=submit] {
+    background: #fee91c;
+	padding: 10px 20px;
+    border: none;
+    border: 1px solid transparent;
+    transition: 0.35s;
+}
+
+input[type=submit]:hover, 
+input[type=submit]:focus {
+    background: black;
+    border: 1px solid #fee91c;
+    color: #fee91c;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+    
+}

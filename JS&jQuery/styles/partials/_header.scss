@@ -1,127 +1,51 @@
-// header {
-//   background-image: url(/assets/backgroundImage.png);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   min-height: 95vh;
-// }
+header {
+  background-image: url(../assets/starWarsBackgrounds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  min-height: 65vh;
+}
 
-// .navContainer {
-//   display: flex;
-//   flex-direction: column;
-//   .mainNav {
-//     display: flex;
-//     justify-content: space-between;
-//     .logo {
-//       animation-duration: 2s;
-//       animation-delay: 0s;
-//       animation-iteration-count: 1;
-//     }
-//     ul {
-//       display: flex;
-//       flex-direction: row;
-//       align-items: center;
-//       li {
-//         margin: 0 20px;
-//         &:last-child {
-//           margin-right: 0;
-//         }
-//         a {
-//           font-family: $secondaryFont;
-//           font-weight: bold;
-//           font-size: 2rem;
-//           text-align: center;
-//           text-decoration: none;
-//           text-transform: uppercase;
-//           line-height: 29px;
-//           letter-spacing: 1.4px;
-//           color: $primeryFontColor;
-//         }
-//       }
-//       .current {
-//         border-bottom: 3px solid $secondaryBackgroundColor;
-//       }
-//     }
-//   }
-//   .headline {
-//     animation-duration: 2s;
-//     animation-delay: 0s;
-//     animation-iteration-count: 1;
-//   }
-// }
-// .mobileNav {
-//     display: none;
-// }
+.hero {
+  display: flex;
+}
 
-// // Nav animation
-// @-webkit-keyframes hvr-wobble-vertical {
-//   16.65% {
-//     -webkit-transform: translateY(8px);
-//     transform: translateY(8px);
-//   }
-//   33.3% {
-//     -webkit-transform: translateY(-6px);
-//     transform: translateY(-6px);
-//   }
-//   49.95% {
-//     -webkit-transform: translateY(4px);
-//     transform: translateY(4px);
-//   }
-//   66.6% {
-//     -webkit-transform: translateY(-2px);
-//     transform: translateY(-2px);
-//   }
-//   83.25% {
-//     -webkit-transform: translateY(1px);
-//     transform: translateY(1px);
-//   }
-//   100% {
-//     -webkit-transform: translateY(0);
-//     transform: translateY(0);
-//   }
-// }
+h1 {
+  display: flex;
+  align-items: center;
+  // Animmation
+  animation-duration: 5s;
+}
 
-// @keyframes hvr-wobble-vertical {
-//   16.65% {
-//     -webkit-transform: translateY(8px);
-//     transform: translateY(8px);
-//   }
-//   33.3% {
-//     -webkit-transform: translateY(-6px);
-//     transform: translateY(-6px);
-//   }
-//   49.95% {
-//     -webkit-transform: translateY(4px);
-//     transform: translateY(4px);
-//   }
-//   66.6% {
-//     -webkit-transform: translateY(-2px);
-//     transform: translateY(-2px);
-//   }
-//   83.25% {
-//     -webkit-transform: translateY(1px);
-//     transform: translateY(1px);
-//   }
-//   100% {
-//     -webkit-transform: translateY(0);
-//     transform: translateY(0);
-//   }
-// }
+// Animation styles start for the h1
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
 
-// .hvr-wobble-vertical {
-//   display: inline-block;
-//   vertical-align: middle;
-//   -webkit-transform: perspective(1px) translateZ(0);
-//   transform: perspective(1px) translateZ(0);
-//   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-// }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
-// .hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
-//   -webkit-animation-name: hvr-wobble-vertical;
-//   animation-name: hvr-wobble-vertical;
-//   -webkit-animation-duration: 1s;
-//   animation-duration: 1s;
-//   -webkit-animation-timing-function: ease-in-out;
-//   animation-timing-function: ease-in-out;
-//   -webkit-animation-iteration-count: 1;
-//   animation-iteration-count: 1;
-// }
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 40%, 0);
+    transform: translate3d(0, 40%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+//Animation styles ends for the h1

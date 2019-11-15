@@ -1,4 +1,4 @@
-Testille Project Global Styles Starts Here
+// Testille Project Global Styles Starts Here
 
 html {
     font-size: 62.5%;
@@ -26,7 +26,13 @@ img {
 
 h1 {
     font-family: "StarWars";
+    font-size: 3.5rem;
+    color: #fee91c;
+    text-align: center;
+    text-transform: uppercase;
     letter-spacing: 5.5px;
+    line-height: 1.6;
+    margin: 0;
 }
 
 input[type=submit] {
@@ -40,23 +46,14 @@ input {
     font-family: 'Kanit', sans-serif;
 }
 
-h1 {
-    font-size: 3.5rem;
-    color: #fee91c;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.6;
-    margin: 0;
-}
-
 /* Skip-line for accessibility */
 .skip-link {
   position: absolute;
   left: -1000px;
   top: 5px;
   z-index: 999;
-//   background: $secondaryFontColor;
-//   color: $tertiaryFontColor;
+  background: white;
+  color: black;
 }
 
 .skip-link:focus {

@@ -1,10 +1,10 @@
-@mixin mqDesktop {
+@mixin mqTabletLand {
     @media (max-width: 1023px) {
         @content;
     }
 }
 
-@mixin mqTablet {
+@mixin mqTabletVert {
     @media (max-width: 768px) {
         @content;
     }

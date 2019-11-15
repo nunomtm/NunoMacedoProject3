@@ -240,7 +240,6 @@ html {
   src: url(../Font/starWarsFont.ttf) format("truetype");
 }
 
-Testille Project Global Styles Starts Here
 html {
   font-size: 62.5%;
 }
@@ -267,7 +266,13 @@ img {
 
 h1 {
   font-family: "StarWars";
+  font-size: 3.5rem;
+  color: #fee91c;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 5.5px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 input[type=submit] {
@@ -281,21 +286,14 @@ input {
   font-family: 'Kanit', sans-serif;
 }
 
-h1 {
-  font-size: 3.5rem;
-  color: #fee91c;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.6;
-  margin: 0;
-}
-
 /* Skip-line for accessibility */
 .skip-link {
   position: absolute;
   left: -1000px;
   top: 5px;
   z-index: 999;
+  background: white;
+  color: black;
 }
 
 .skip-link:focus {
@@ -368,6 +366,17 @@ h1 {
   text-align: center;
 }
 
+form p,
+label {
+  font-size: 25px;
+  color: #fee91c;
+  margin-top: 0;
+}
+
+label {
+  margin-right: 30px;
+}
+
 .submit {
   padding: 80px 0;
   font-size: 1.5rem;
@@ -388,17 +397,6 @@ input[type=submit]:focus {
   background: black;
   border: 1px solid #fee91c;
   color: #fee91c;
-}
-
-form p,
-label {
-  font-size: 25px;
-  color: #fee91c;
-  margin-top: 0;
-}
-
-label {
-  margin-right: 30px;
 }
 
 input[type=radio] {
