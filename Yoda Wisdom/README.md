@@ -1,18 +1,19 @@
-// Scope Code
+\\ Scope Code
 
-// - My ideia is to have a one page app where the theme is from Star Wars and the user will be able to get some Jedi Wisdom from Master Yoda.
+- My ideia is to have a one page app where the theme is from Star Wars and the user will be able to get some Jedi Wisdom from Master Yoda.
 
-// - Once the page loads they will be prompt to answer two questions: the 1st one would be: "How are you feeling today?" The user would have radion buttons to sleect which one they would like and the otions are, option1 = Rebel / option2 = Dark. The 2nd question would be: "Which lighsaber would you choose?" option1 = Blue / option2 = Red. I would have an image or a gif with the lightsabers beside the radio button. 
+- Once the page loads they will be prompt to answer two questions: the 1st one would be: "Joining today who do you feel like?" The user would have radion buttons to select which one they would like and the otions are, option1 = Resistance / option2 = Dark Side. The 2nd question would be: "Would you choose what color lightsaber?" option1 = Blue / option2 = Red. I would have an image or a gif with the lightsabers beside the radio button. 
 
-// - To randomize the selection of which quote will be displayed I will create two objects arrays, one for Jedi with two key values Red and Blue and inside this values I will have quotes based on if they select Rebel, Red something related to the dark side, if they select Rebel and Blue some good advise from Yoda. I will do the same for the Vader with two key values Red and Blue.
+- To randomize the selection of which quote will be displayed I will create un objects called rebel, inside this object I will have to object arrays. One for Jedi and another one for Vader with thee key values: quote, type and color. For Jedi and Vader I will have different quotes related to Jedi or Vader. Type will be related to resistance or dark side. Color is related to the lightsaber and will have blue and red as values. So if the user selects Resistance and Blue the user will receive some good advise from Master Yoda. The same will apply to Vader.
 
-// - Depending on their selection I would have a random quote from Yoda displaying below the two questions and beside Yoda's photo. 
+- Depending on their selection I would have a random quote from Master Yoda displaying below the two questions and beside Yoda's photo/gif. 
 
-// Strech Goal
+\\ Strech Goal
 
-// - Increase number of quotes
-// - Have the quote shown in a speaking balloon 
-// - Animate the header and have Yoda with some sort of animation too 
+- Increase number of quotes
+- Have the quote shown in a speaking balloon 
+- Animate the header and have Master Yoda with some sort of animation too
+- Have the title sliding up like the Star Wars movie intro
 
 
 
