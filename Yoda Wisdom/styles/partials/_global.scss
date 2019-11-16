@@ -1,4 +1,4 @@
-// Testille Project Global Styles Starts Here
+// Yoda Wisdom Global Styles Starts Here
 
 html {
     font-size: 62.5%;
@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0 auto;
-    background-color: black;
+    background-color: $baseBackgroundColor;
 }
 
 .wrapper {
@@ -26,8 +26,8 @@ img {
 
 h1 {
     font-family: "StarWars";
-    font-size: 3.5rem;
-    color: #fee91c;
+    font-size: 7.5rem;
+    color: $primeryColor;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5.5px;
@@ -47,16 +47,16 @@ input {
 }
 
 /* Skip-line for accessibility */
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
+  background: $secondaryBackgroundColor;
   color: black;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
 /* - */

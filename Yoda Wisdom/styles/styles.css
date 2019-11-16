@@ -250,7 +250,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: black;
+  background-color: #000;
 }
 
 .wrapper {
@@ -266,7 +266,7 @@ img {
 
 h1 {
   font-family: "StarWars";
-  font-size: 3.5rem;
+  font-size: 7.5rem;
   color: #fee91c;
   text-align: center;
   text-transform: uppercase;
@@ -287,16 +287,16 @@ input {
 }
 
 /* Skip-line for accessibility */
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
+  background: #ffffff;
   color: black;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
 
@@ -306,24 +306,94 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  min-height: 65vh;
+  min-height: 95vh;
 }
 
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
-h1 {
+.hero img {
+  width: 65%;
+  padding-top: 80px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.hero .titleContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  overflow: hidden;
+  -webkit-transform: rotateX(40deg);
+          transform: rotateX(40deg);
+}
+
+.hero .heroTitle {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+.hero .first {
+  color: #fee91c;
+  font-size: 3.8rem;
+  position: absolute;
+  top: 105%;
+  left: 46%;
+}
+
+.hero i {
+  color: #fee91c;
+  font-size: 4.5rem;
+  position: absolute;
+  top: 107%;
+  left: 45.8%;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #fee91c;
+  position: absolute;
+  top: 111%;
+  left: 42.5%;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
 }
 
 @-webkit-keyframes slideInUp {
@@ -340,8 +410,8 @@ h1 {
 
 @keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 40%, 0);
-    transform: translate3d(0, 40%, 0);
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
     visibility: visible;
   }
   to {
@@ -355,51 +425,72 @@ h1 {
   animation-name: slideInUp;
 }
 
-.join,
-.saber {
-  background: black;
+form .join,
+form .saber {
+  background: #000;
   color: #fee91c;
-  padding: 5%;
-  margin: 0;
-  border: none;
-  border-bottom: 1px solid red;
   text-align: center;
+  margin: 0;
+  padding: 5%;
+  border: none;
+  border-bottom: 1px solid #fee91c;
 }
 
-form p,
-label {
-  font-size: 25px;
+form .join p,
+form .join label,
+form .saber p,
+form .saber label {
+  font-size: 3rem;
   color: #fee91c;
   margin-top: 0;
 }
 
-label {
+form .join label,
+form .saber label {
   margin-right: 30px;
 }
 
-.submit {
-  padding: 80px 0;
-  font-size: 1.5rem;
+form .saber {
+  position: relative;
+}
+
+form .saber .blueSaber {
+  position: absolute;
+  top: 56%;
+  left: 40%;
+}
+
+form .saber .redSaber {
+  position: absolute;
+  top: 56%;
+  left: 56%;
+}
+
+form .submit {
+  padding: 60px 0;
+  font-size: 1.8rem;
   text-align: center;
 }
 
-input[type=submit] {
+form input[type=submit] {
   background: #fee91c;
   padding: 10px 20px;
   border: none;
   border: 1px solid transparent;
   -webkit-transition: 0.35s;
   transition: 0.35s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
-input[type=submit]:hover,
-input[type=submit]:focus {
-  background: black;
+form input[type=submit]:hover,
+form input[type=submit]:focus {
+  background: #000;
   border: 1px solid #fee91c;
   color: #fee91c;
 }
 
-input[type=radio] {
+form input[type=radio] {
   margin-right: 10px;
 }
 
@@ -408,11 +499,10 @@ input[type=radio] {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
-  height: 300px;
 }
 
-.quote {
-  font-family: 'Kanit', sans-serif;
+.wisdom .quote {
+  font-family: "Kanit", sans-serif;
   font-size: 2rem;
   text-align: center;
   color: #fee91c;
@@ -422,20 +512,21 @@ input[type=radio] {
   width: 500px;
   margin: 0 auto;
   border-radius: 40px 40px 40px 0;
-  -webkit-box-shadow: 10px 10px 15px #fee91c;
-          box-shadow: 10px 10px 15px #fee91c;
+  -webkit-box-shadow: 5px 5px 10px #fee91c;
+          box-shadow: 5px 5px 10px #fee91c;
   border: 2px solid #fee91c;
+  display: none;
 }
 
-.quote p {
-  padding: 10px;
+.wisdom .quote p {
+  padding: 15px;
 }
 
 footer {
   border-top: 2px solid #fee91c;
 }
 
-.footer-container {
+footer .footerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +535,7 @@ footer {
           justify-content: space-between;
 }
 
-footer p {
-  font-size: 1.4rem;
+footer .footerContainer p {
+  font-size: 1.8rem;
   color: #fee91c;
 }

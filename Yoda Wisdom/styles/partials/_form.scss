@@ -1,0 +1,56 @@
+form {
+    .join,
+    .saber {
+        background: $baseBackgroundColor;
+        color: $primeryColor;
+        text-align: center;
+        margin: 0;
+        padding: 5%;
+        border: none;
+        border-bottom: 1px solid $primeryColor;
+        p,
+        label {
+            font-size: 3rem;
+            color: $primeryColor;
+            margin-top: 0;
+        }
+        label {
+            margin-right: 30px;
+        }
+    }
+    .saber {
+        position: relative;
+        .blueSaber {
+            position: absolute;
+            top: 56%;
+            left: 40%;
+        }
+        .redSaber {
+            position: absolute;
+            top: 56%;
+            left: 56%;
+        }
+    }
+    .submit {
+        padding: 60px 0;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    input[type=submit] {
+        background: $primeryColor;
+        padding: 10px 20px;
+        border: none;
+        border: 1px solid transparent;
+        transition: 0.35s;
+        transition-delay: 0.15s;
+    }
+    input[type=submit]:hover, 
+    input[type=submit]:focus {
+        background: $baseBackgroundColor;
+        border: 1px solid $primeryColor;
+        color: $primeryColor;
+    }
+    input[type=radio] {
+        margin-right: 10px;
+    }
+}

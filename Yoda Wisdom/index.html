@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Yoda Wisdom</title>
+</head>
+<body>
+    <!-- Skip-link for accessibility -->
+    <a href="header" class="skipLink">Skip to main content.</a>
+
+    
+    <header>
+        <div class="hero wrapper">
+            <img class="animated slideInLeft slower 10s" src="./assets/headerYoda.png" alt="Yoda stending with is hand up and on the other hand he has his cain">  
+            <div class="titleContainer">
+                <h1 class="heroTitle animated slideInUp slower 10s wrapper">With You May The Wisdom Be</h1>
+            </div>
+            <i class="first animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
+            <i class="animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
+            <p>Click to Play</p>
+        </div>
+    </header>
+
+    <form action="">
+        <fieldset class="join">
+            <p>Joining today who do you feel like?</p>
+            <input type="radio" name="join" id="rebel" value="jedi">
+            <label for="rebel">Resistance <i class="fas fa-jedi"></i></label>
+
+            <input type="radio" name="join" id="dark" value="vader">
+            <label for="dark">Dark Side <i class="fab fa-galactic-republic"></i></label>
+        </fieldset>
+
+        <fieldset class="saber">
+            <p>Would you choose what color lightsaber?</p>
+            <input type="radio" name="saber" id="blue" value="blue">
+            <label for="blue">Blue</label> 
+            <img class="blueSaber" src="./assets/blueLightsaber.png" alt="">
+
+            <input type="radio" name="saber" id="red" value="red">
+            <label for="red">Red</label>
+            <img class="redSaber" src="./assets/redLightsaber.png" alt="">
+        </fieldset>
+            <div class="submit">
+                <input type="submit" value="Get Master Yoda Wisdom">
+            </div>
+    </form>
+
+    <section class="wisdom wrapper">
+        <div>
+            <img src="./assets/Yoda.gif" alt="gif of Yoda moving here and closing his eyes as he is thinking">
+        </div>
+        <div class="quote">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer wrapper">
+            <p>Copyright &copy; Nuno Macedo 2019</p>
+            <p>Yoda Quotes provided by www.yodaquotes.net</p>
+        </div>
+    </footer>
+
+    <audio id="yoda">
+        <source src="./assets/yodaHelpYou.wav" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
