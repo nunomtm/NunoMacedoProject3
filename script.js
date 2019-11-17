@@ -204,9 +204,10 @@ const rebel = {
         },
     ]
 };
+// Object Ends Here
 
 
-// The function will start here
+// The Function Start Here
 $(function() {
 
     const playScroll = $(window).scrollTop();
@@ -246,3 +247,4 @@ $(function() {
 
     });  
 });
+// The Function Ends Here
