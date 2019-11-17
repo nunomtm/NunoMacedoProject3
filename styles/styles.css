@@ -556,7 +556,7 @@ footer .footerContainer p {
 
 @media (max-width: 1024px) {
   header {
-    min-height: 70vh;
+    min-height: 60vh;
   }
   header .hero p {
     left: 41.5%;
@@ -627,6 +627,9 @@ footer .footerContainer p {
 }
 
 @media (max-width: 670px) {
+  header {
+    min-height: 50vh;
+  }
   header .hero p {
     left: 38%;
   }

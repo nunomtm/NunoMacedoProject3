@@ -2,11 +2,8 @@
 
 @include mqTabletLand {
     header {
-        min-height: 70vh;
+        min-height: 60vh;
         .hero  {
-            // img {
-            //     width: 30%;
-            // }
             p {
                 left: 41.5%;
             }
@@ -96,7 +93,7 @@
 
 @media (max-width: 670px) {
     header {
-        // min-height: 70vh;
+        min-height: 50vh;
         .hero {
             // img {
             //     width: 60%;
