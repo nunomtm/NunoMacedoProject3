@@ -556,7 +556,7 @@ footer .footerContainer p {
 
 @media (max-width: 1024px) {
   header {
-    min-height: 75vh;
+    min-height: 80vh;
   }
   header .hero img {
     width: 70%;
@@ -588,7 +588,7 @@ footer .footerContainer p {
 
 @media (max-width: 768px) {
   header {
-    min-height: 40vh;
+    min-height: 70vh;
   }
   header .hero img {
     width: 65%;
@@ -637,7 +637,7 @@ footer .footerContainer p {
 
 @media (max-width: 670px) {
   header {
-    min-height: 45vh;
+    min-height: 70vh;
   }
   header .hero img {
     width: 60%;
@@ -676,7 +676,7 @@ footer .footerContainer p {
 
 @media (max-width: 480px) {
   header {
-    min-height: 32vh;
+    min-height: 70vh;
   }
   header .hero img {
     width: 60%;
@@ -720,7 +720,7 @@ footer .footerContainer p {
 
 @media (max-width: 415px) {
   header {
-    min-height: 34vh;
+    min-height: 70vh;
   }
   header .hero img {
     width: 60%;
@@ -753,7 +753,7 @@ footer .footerContainer p {
 
 @media (max-width: 375px) {
   header {
-    min-height: 30vh;
+    min-height: 70vh;
   }
   header .hero .heroTitle {
     font-size: 2.2rem;
