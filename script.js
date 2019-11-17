@@ -1,4 +1,6 @@
 // JS file starts here 
+
+// Object Starts Here
 const rebel = {
     jedi: [
         {
@@ -204,9 +206,10 @@ const rebel = {
         },
     ]
 };
+// Object Endss Here
 
 
-// The function will start here
+// The Function Start Here
 $(function() {
 
     const playScroll = $(window).scrollTop();
@@ -244,5 +247,6 @@ $(function() {
 
         $('.quote').css('display', 'block');
 
-    });  
+    });
 });
+// Function Ends Here
