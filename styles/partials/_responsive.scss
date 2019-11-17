@@ -2,10 +2,10 @@
 
 @include mqTabletLand {
     header {
-        // min-height: 80vh;
+        min-height: 80vh;
         .hero  {
             img {
-                width: 70%;
+                width: 50%;
             }
             p {
                 left: 41.5%;
@@ -42,11 +42,11 @@
 
 @include mqTabletVert {
     header {
-        // min-height: 70vh;
+        // min-height: 80vh;
         .hero {
-            img {
-                width: 65%;
-            }
+            // img {
+            //     width: 50%;
+            // }
             .heroTitle {
                 font-size: 5.3rem;
             }
@@ -98,9 +98,9 @@
     header {
         // min-height: 70vh;
         .hero {
-            img {
-                width: 60%;
-            }
+            // img {
+            //     width: 60%;
+            // }
             p {
                 left: 38%;
             }
@@ -138,9 +138,9 @@
     header {
         // min-height: 70vh;
         .hero {
-            img {
-                width: 60%;
-            }
+            // img {
+            //     width: 60%;
+            // }
             p {
                 font-size: 1.5rem;
                 top: 120%;
@@ -186,9 +186,9 @@
     header {
         // min-height: 70vh;
         .hero {
-            img {
-                width: 60%;
-            }
+            // img {
+            //     width: 60%;
+            // }
             .heroTitle {
                 font-size: 2.5rem;
             }

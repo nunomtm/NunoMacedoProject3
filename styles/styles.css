@@ -556,8 +556,11 @@ footer .footerContainer p {
 }
 
 @media (max-width: 1024px) {
+  header {
+    min-height: 80vh;
+  }
   header .hero img {
-    width: 70%;
+    width: 50%;
   }
   header .hero p {
     left: 41.5%;
@@ -585,9 +588,6 @@ footer .footerContainer p {
 }
 
 @media (max-width: 768px) {
-  header .hero img {
-    width: 65%;
-  }
   header .hero .heroTitle {
     font-size: 5.3rem;
   }
@@ -631,9 +631,6 @@ footer .footerContainer p {
 }
 
 @media (max-width: 670px) {
-  header .hero img {
-    width: 60%;
-  }
   header .hero p {
     left: 38%;
   }
@@ -667,9 +664,6 @@ footer .footerContainer p {
 }
 
 @media (max-width: 480px) {
-  header .hero img {
-    width: 60%;
-  }
   header .hero p {
     font-size: 1.5rem;
     top: 120%;
@@ -708,9 +702,6 @@ footer .footerContainer p {
 }
 
 @media (max-width: 415px) {
-  header .hero img {
-    width: 60%;
-  }
   header .hero .heroTitle {
     font-size: 2.5rem;
   }
