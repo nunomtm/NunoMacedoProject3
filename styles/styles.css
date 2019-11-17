@@ -318,8 +318,7 @@ header {
 }
 
 .hero img {
-  width: 65%;
-  padding-top: 80px;
+  width: 42%;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
@@ -702,7 +701,7 @@ footer .footerContainer p {
 
 @media (max-width: 415px) {
   header {
-    min-height: 38vh;
+    min-height: 90vh;
   }
   header .heroTitle {
     font-size: 2.5rem;
@@ -804,3 +803,4 @@ footer .footerContainer p {
     width: 255px;
   }
 }
+/*# sourceMappingURL=styles.css.map */
