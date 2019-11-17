@@ -1,1 +1,299 @@
-// Header Responsive Starts Here
+// Responsive Design Starts Bellow
+
+@include mqTabletLand {
+    header {
+        min-height: 75vh;
+        .heroTitle {
+            font-size: 6.5rem;
+        }
+        .hero  {
+            img {
+                width: 70%;
+            }
+            p {
+                left: 41.5%;
+            }
+        }
+    }
+    form {
+        .saber {
+            .blueSaber {
+                top: 57%;
+                left: 36%;
+            }
+            .redSaber {
+                top: 57%;
+                left: 59%;
+            }
+        }
+    }
+    .wisdom {
+        img {
+            width: 80%;
+        }
+        .quote {
+            width: 400px;
+        }
+    }   
+}
+
+@include mqTabletVert {
+    header {
+        min-height: 46vh;
+        .heroTitle {
+            font-size: 5.3rem;
+        }
+        .hero {
+            img {
+                width: 100%;
+            }
+            .first {
+                font-size: 3.3rem;
+                top: 104%;
+                left: 46.1%;
+            }
+            i {
+                font-size: 4rem;
+                top: 107%;
+                left: 45.8%;
+            }
+            p {
+                left: 40%;
+            }
+        } 
+    }
+    form {
+        .join,
+        .saber {
+            padding: 8%;
+        }
+        .saber {
+            .blueSaber {
+                top: 59%;
+                left: 31%;
+            }
+            .redSaber {
+                top: 59%;
+                left: 61.5%;
+            }
+        }
+    }
+    .wisdom {
+        flex-direction: column-reverse;
+        align-items: center;
+        img {
+            padding-top: 10%;
+            width: 100%;
+        }
+        .quote {
+            width: 350px;
+        }
+    }  
+    footer {
+        .footerContainer p {
+            font-size: 1.5rem;
+        }
+    } 
+}
+
+@media (max-width: 670px) {
+    header {
+        min-height: 55vh;
+        .heroTitle {
+            font-size: 4.5rem;
+        }
+        .hero {
+            p {
+                left: 38%;
+            }
+        } 
+    }
+    form {
+        .join,
+        .saber {
+            padding: 8%;
+        }
+        .saber {
+            .blueSaber {
+                top: 63%;
+                left: 28%;
+            }
+            .redSaber {
+                top: 63%;
+                left: 63.5%;
+            }
+        }
+    }
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@include mqMobile {
+    header {
+        min-height: 42vh;
+        .heroTitle {
+            font-size: 3rem;
+        }
+        .hero {
+            p {
+                font-size: 1.5rem;
+                top: 120%;
+                left: 35.5%;
+            }
+            .first {
+                font-size: 2.8rem;
+                top: 112%;
+            }
+            i {
+                font-size: 3.5rem;
+                top: 115%;
+                left: 45.5%;
+            }
+        }
+    }
+    form {
+        .join, 
+        .saber {
+            margin: 1px;
+            p {
+                font-size: 2.4rem;
+            }
+            label {
+                font-size: 2rem;
+            }
+        } 
+        .saber {
+            .blueSaber {
+                left: 24%;
+            }
+        }
+        .submit {
+            font-size: 1.5rem;
+        }
+    }
+} 
+
+@include mqMobilePlus {
+    header {
+        min-height: 38vh;
+        .heroTitle {
+            font-size: 2.5rem;
+        }
+        .hero {
+            img {
+                padding-top: 40px;
+            }
+            .first {
+                font-size: 2.3rem;
+                top: 112%;
+            }
+            i {
+                font-size: 3rem;
+                top: 115%;
+                left: 45.5%;
+            }
+        }
+    }
+    form {
+        .saber {
+            .blueSaber {
+                left: 20%;
+            }
+            .redSaber {
+                left: 65.5%;
+            }
+        }
+    }
+    .wisdom {
+        .quote {
+            width: 320px;
+        }
+    }  
+}
+
+@include mqMobileX {
+    header {
+        min-height: 45vh;
+        .heroTitle {
+            font-size: 2.2rem;
+        }
+        .hero {
+            .first {
+                top: 127%;
+            }
+            i {
+                top: 130%;
+            }
+            p {
+                top: 135%;
+                left: 34.5%;
+            }
+        }
+    }
+    form {
+        .join,
+        .saber {
+            i {
+                font-size: 1.6rem;
+            }
+            label {
+                margin-right: 20px;
+            }
+        }
+    }
+    .wisdom {
+        .quote {
+            width: 300px;
+        }
+    }  
+    .footerContainer p {
+        text-align: center;
+    }
+}
+
+@include mqMobileSE {
+    header {
+        min-height: 55vh;
+        .heroTitle {
+            font-size: 2.5rem;
+        }
+        .hero {
+            .first {
+                top: 126%;
+            }
+            i {
+                top: 130%;
+            }
+            p {
+                left: 32.5%;
+            }
+        }
+    }
+    form {
+        .join {
+            display: flex;
+            flex-direction: column;
+            label:nth-child(3) {
+                padding-bottom: 5%;
+            }
+        }
+        .saber {
+            .blueSaber {
+                left: 15%;
+            }
+            .redSaber {
+                left: 69.5%;
+            }
+        }
+        input[type=submit] {
+            padding: 8px 0px;
+        }
+    }
+    .wisdom {
+        .quote {
+            width: 255px;
+        }
+    }  
+}

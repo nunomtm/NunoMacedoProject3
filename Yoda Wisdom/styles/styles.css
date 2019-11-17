@@ -452,6 +452,7 @@ form .saber label {
 
 form .saber {
   position: relative;
+  border: none;
 }
 
 form .saber .blueSaber {
@@ -538,4 +539,268 @@ footer .footerContainer {
 footer .footerContainer p {
   font-size: 1.8rem;
   color: #fee91c;
+}
+
+@media (max-width: 1024px) {
+  header {
+    min-height: 75vh;
+  }
+  header .heroTitle {
+    font-size: 6.5rem;
+  }
+  header .hero img {
+    width: 70%;
+  }
+  header .hero p {
+    left: 41.5%;
+  }
+  form .saber .blueSaber {
+    top: 57%;
+    left: 36%;
+  }
+  form .saber .redSaber {
+    top: 57%;
+    left: 59%;
+  }
+  .wisdom img {
+    width: 80%;
+  }
+  .wisdom .quote {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    min-height: 46vh;
+  }
+  header .heroTitle {
+    font-size: 5.3rem;
+  }
+  header .hero img {
+    width: 100%;
+  }
+  header .hero .first {
+    font-size: 3.3rem;
+    top: 104%;
+    left: 46.1%;
+  }
+  header .hero i {
+    font-size: 4rem;
+    top: 107%;
+    left: 45.8%;
+  }
+  header .hero p {
+    left: 40%;
+  }
+  form .join,
+  form .saber {
+    padding: 8%;
+  }
+  form .saber .blueSaber {
+    top: 59%;
+    left: 31%;
+  }
+  form .saber .redSaber {
+    top: 59%;
+    left: 61.5%;
+  }
+  .wisdom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wisdom img {
+    padding-top: 10%;
+    width: 100%;
+  }
+  .wisdom .quote {
+    width: 350px;
+  }
+  footer .footerContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 670px) {
+  header {
+    min-height: 55vh;
+  }
+  header .heroTitle {
+    font-size: 4.5rem;
+  }
+  header .hero p {
+    left: 38%;
+  }
+  form .join,
+  form .saber {
+    padding: 8%;
+  }
+  form .saber .blueSaber {
+    top: 63%;
+    left: 28%;
+  }
+  form .saber .redSaber {
+    top: 63%;
+    left: 63.5%;
+  }
+  .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    min-height: 42vh;
+  }
+  header .heroTitle {
+    font-size: 3rem;
+  }
+  header .hero p {
+    font-size: 1.5rem;
+    top: 120%;
+    left: 35.5%;
+  }
+  header .hero .first {
+    font-size: 2.8rem;
+    top: 112%;
+  }
+  header .hero i {
+    font-size: 3.5rem;
+    top: 115%;
+    left: 45.5%;
+  }
+  form .join,
+  form .saber {
+    margin: 1px;
+  }
+  form .join p,
+  form .saber p {
+    font-size: 2.4rem;
+  }
+  form .join label,
+  form .saber label {
+    font-size: 2rem;
+  }
+  form .saber .blueSaber {
+    left: 24%;
+  }
+  form .submit {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  header {
+    min-height: 38vh;
+  }
+  header .heroTitle {
+    font-size: 2.5rem;
+  }
+  header .hero img {
+    padding-top: 40px;
+  }
+  header .hero .first {
+    font-size: 2.3rem;
+    top: 112%;
+  }
+  header .hero i {
+    font-size: 3rem;
+    top: 115%;
+    left: 45.5%;
+  }
+  form .saber .blueSaber {
+    left: 20%;
+  }
+  form .saber .redSaber {
+    left: 65.5%;
+  }
+  .wisdom .quote {
+    width: 320px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    min-height: 45vh;
+  }
+  header .heroTitle {
+    font-size: 2.2rem;
+  }
+  header .hero .first {
+    top: 127%;
+  }
+  header .hero i {
+    top: 130%;
+  }
+  header .hero p {
+    top: 135%;
+    left: 34.5%;
+  }
+  form .join i,
+  form .saber i {
+    font-size: 1.6rem;
+  }
+  form .join label,
+  form .saber label {
+    margin-right: 20px;
+  }
+  .wisdom .quote {
+    width: 300px;
+  }
+  .footerContainer p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    min-height: 55vh;
+  }
+  header .heroTitle {
+    font-size: 2.5rem;
+  }
+  header .hero .first {
+    top: 126%;
+  }
+  header .hero i {
+    top: 130%;
+  }
+  header .hero p {
+    left: 32.5%;
+  }
+  form .join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .join label:nth-child(3) {
+    padding-bottom: 5%;
+  }
+  form .saber .blueSaber {
+    left: 15%;
+  }
+  form .saber .redSaber {
+    left: 69.5%;
+  }
+  form input[type=submit] {
+    padding: 8px 0px;
+  }
+  .wisdom .quote {
+    width: 255px;
+  }
 }
