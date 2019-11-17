@@ -3,15 +3,18 @@
 @include mqTabletLand {
     header {
         min-height: 75vh;
-        .heroTitle {
-            font-size: 6.5rem;
-        }
         .hero  {
             img {
                 width: 70%;
             }
             p {
                 left: 41.5%;
+            }
+            .heroTitle {
+                font-size: 6.5rem;
+            }
+            .arrowContainer {
+                top: 115%;
             }
         }
     }
@@ -39,26 +42,21 @@
 
 @include mqTabletVert {
     header {
-        min-height: 46vh;
-        .heroTitle {
-            font-size: 5.3rem;
-        }
+        min-height: 40vh;
         .hero {
             img {
-                width: 100%;
+                width: 80%;
             }
-            .first {
-                font-size: 3.3rem;
-                top: 104%;
-                left: 46.1%;
+            .heroTitle {
+                font-size: 5.3rem;
             }
-            i {
-                font-size: 4rem;
-                top: 107%;
-                left: 45.8%;
-            }
-            p {
-                left: 40%;
+            .arrowContainer {
+                .first {
+                    font-size: 3rem;
+                }
+                .second {
+                    font-size: 4rem;
+                }
             }
         } 
     }
@@ -98,13 +96,16 @@
 
 @media (max-width: 670px) {
     header {
-        min-height: 55vh;
-        .heroTitle {
-            font-size: 4.5rem;
-        }
+        min-height: 45vh;
         .hero {
             p {
                 left: 38%;
+            }
+            .heroTitle {
+                font-size: 4.5rem;
+            }
+            .arrowContainer {
+                left: 40%;
             }
         } 
     }
@@ -132,24 +133,27 @@
 
 @include mqMobile {
     header {
-        min-height: 42vh;
-        .heroTitle {
-            font-size: 3rem;
-        }
+        min-height: 32vh;
         .hero {
+            img {
+                width: 90%;
+            }
             p {
                 font-size: 1.5rem;
                 top: 120%;
                 left: 35.5%;
             }
-            .first {
-                font-size: 2.8rem;
-                top: 112%;
+            .heroTitle {
+                font-size: 3rem;
             }
-            i {
-                font-size: 3.5rem;
-                top: 115%;
-                left: 45.5%;
+            .arrowContainer {
+                left: 35%;
+                .first {
+                    font-size: 2.4rem;
+                }
+                .second {
+                    font-size: 3.2rem;
+                }
             }
         }
     }
@@ -177,22 +181,25 @@
 
 @include mqMobilePlus {
     header {
-        min-height: 90vh;
-        .heroTitle {
-            font-size: 2.5rem;
-        }
+        min-height: 34vh;
         .hero {
             img {
-                padding-top: 40px;
+                padding-top: 10px;
             }
-            .first {
-                font-size: 2.3rem;
-                top: 112%;
+            .heroTitle {
+                font-size: 2.5rem;
             }
-            i {
-                font-size: 3rem;
-                top: 115%;
-                left: 45.5%;
+            .arrowContainer {
+                left: 30%;
+                .first {
+                    font-size: 2rem;
+                }
+                .second {
+                    font-size: 2.8rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -215,20 +222,13 @@
 
 @include mqMobileX {
     header {
-        min-height: 45vh;
-        .heroTitle {
-            font-size: 2.2rem;
-        }
+        min-height: 30vh;
         .hero {
-            .first {
-                top: 127%;
+            .heroTitle {
+                font-size: 2.2rem;
             }
-            i {
-                top: 130%;
-            }
-            p {
-                top: 135%;
-                left: 34.5%;
+            .arrowContainer {
+                top: 125%;
             }
         }
     }
@@ -255,19 +255,10 @@
 
 @include mqMobileSE {
     header {
-        min-height: 55vh;
-        .heroTitle {
-            font-size: 2.5rem;
-        }
+        min-height: 40vh;
         .hero {
-            .first {
-                top: 126%;
-            }
-            i {
-                top: 130%;
-            }
-            p {
-                left: 32.5%;
+            .heroTitle {
+                font-size: 2rem;
             }
         }
     }

@@ -9,6 +9,7 @@ header {
 .hero {
     display: flex;
     perspective: 1000px;
+    position: relative;
     img {
         width: 75%; 
         padding-top: 5%;
@@ -20,35 +21,37 @@ header {
         align-items: center;
         overflow: hidden;
         transform: rotateX(40deg);
-    }
-    .heroTitle {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
+        .heroTitle {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+        }
     }
     //Style the arrow down
-    .first {
-        color: $primeryColor;
-        font-size: 3.8rem;
+    .arrowContainer {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         top: 100%;
-        left: 46%;
-    }
-    i {
-        color: $primeryColor;
-        font-size: 4.5rem;
-        position: absolute;
-        top: 102%;
-        left: 45.8%;
-    }
-    //Styles end here
-    p {
-        font-size: 1.8rem;
-        font-style: italic;
-        color: $primeryColor;
-        position: absolute;
-        top: 105%;
-        left: 42.5%;
+        left: 45%;
+        .first,
+        .second,
+        p {
+            color: $primeryColor;
+        }
+        .first {
+            font-size: 3.8rem;
+            position: absolute;
+            top: -11%;
+        }
+        .second {
+            font-size: 4.5rem;
+        }
+        p {
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
     }
 }
 
