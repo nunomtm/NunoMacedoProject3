@@ -591,7 +591,7 @@ footer .footerContainer p {
     min-height: 40vh;
   }
   header .hero img {
-    width: 80%;
+    width: 65%;
   }
   header .hero .heroTitle {
     font-size: 5.3rem;
@@ -625,7 +625,7 @@ footer .footerContainer p {
   }
   .wisdom img {
     padding-top: 10%;
-    width: 100%;
+    width: 70%;
   }
   .wisdom .quote {
     width: 350px;
@@ -638,6 +638,9 @@ footer .footerContainer p {
 @media (max-width: 670px) {
   header {
     min-height: 45vh;
+  }
+  header .hero img {
+    width: 60%;
   }
   header .hero p {
     left: 38%;
@@ -676,7 +679,7 @@ footer .footerContainer p {
     min-height: 32vh;
   }
   header .hero img {
-    width: 90%;
+    width: 60%;
   }
   header .hero p {
     font-size: 1.5rem;
@@ -720,7 +723,7 @@ footer .footerContainer p {
     min-height: 34vh;
   }
   header .hero img {
-    padding-top: 10px;
+    width: 60%;
   }
   header .hero .heroTitle {
     font-size: 2.5rem;
