@@ -242,6 +242,7 @@ html {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -266,7 +267,7 @@ img {
 
 h1 {
   font-family: "StarWars";
-  font-size: 7.5rem;
+  font-size: 9rem;
   color: #fee91c;
   text-align: center;
   text-transform: uppercase;
@@ -275,9 +276,8 @@ h1 {
   margin: 0;
 }
 
-input[type=submit] {
+.submit {
   font-family: "StarWars";
-  letter-spacing: 3px;
 }
 
 p,
@@ -313,13 +313,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  position: relative;
 }
 
 .hero img {
-  width: 75%;
+  width: 31%;
   padding-top: 5%;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
@@ -335,16 +336,17 @@ header {
   overflow: hidden;
   -webkit-transform: rotateX(40deg);
           transform: rotateX(40deg);
+  width: 69%;
 }
 
 .hero .titleContainer .heroTitle {
-  display: inline-block;
   width: 100%;
+  display: inline-block;
   margin: 0;
 }
 
 .hero .arrowContainer {
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,8 +357,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 100%;
-  left: 45%;
+  width: 100%;
+  margin-top: 10%;
 }
 
 .hero .arrowContainer .first,
@@ -367,12 +369,16 @@ header {
 
 .hero .arrowContainer .first {
   font-size: 3.8rem;
-  position: absolute;
-  top: -11%;
 }
 
 .hero .arrowContainer .second {
   font-size: 4.5rem;
+  margin-top: -28px;
+}
+
+.hero .arrowContainer a {
+  text-decoration: none;
+  color: #fee91c;
 }
 
 .hero .arrowContainer p {
@@ -423,8 +429,8 @@ header {
 
 @keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 200%, 0);
-    transform: translate3d(0, 200%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
   to {
@@ -438,13 +444,17 @@ header {
   animation-name: slideInUp;
 }
 
+form {
+  height: 100vh;
+}
+
 form .join,
 form .saber {
   background: #000;
   color: #fee91c;
   text-align: center;
   margin: 0;
-  padding: 5%;
+  padding: 7%;
   border: none;
   border-bottom: 1px solid #fee91c;
 }
@@ -480,9 +490,12 @@ form .saber .redSaber {
   left: 56%;
 }
 
+form input[type=radio] {
+  margin-right: 10px;
+}
+
 form .submit {
   padding: 60px 0;
-  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -504,20 +517,20 @@ form input[type=submit]:focus {
   color: #fee91c;
 }
 
-form input[type=radio] {
-  margin-right: 10px;
-}
-
 .wisdom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  height: calc(100vh - 50px);
+}
+
+.wisdom img {
+  padding-top: 60%;
 }
 
 .wisdom .quote {
   font-family: "Kanit", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   color: #fee91c;
   -ms-flex-item-align: center;
@@ -558,14 +571,8 @@ footer .footerContainer p {
   header {
     min-height: 80vh;
   }
-  header .hero p {
-    left: 41.5%;
-  }
   header .hero .heroTitle {
     font-size: 6.5rem;
-  }
-  header .hero .arrowContainer {
-    top: 115%;
   }
   form .saber .blueSaber {
     top: 57%;
@@ -589,12 +596,6 @@ footer .footerContainer p {
   }
   header .hero .heroTitle {
     font-size: 5.3rem;
-  }
-  header .hero .arrowContainer .first {
-    font-size: 3rem;
-  }
-  header .hero .arrowContainer .second {
-    font-size: 4rem;
   }
   form .join,
   form .saber {
@@ -633,14 +634,8 @@ footer .footerContainer p {
   header {
     min-height: 35vh;
   }
-  header .hero p {
-    left: 38%;
-  }
   header .hero .heroTitle {
     font-size: 4.5rem;
-  }
-  header .hero .arrowContainer {
-    left: 40%;
   }
   form .join,
   form .saber {
@@ -671,14 +666,9 @@ footer .footerContainer p {
   }
   header .hero p {
     font-size: 1.5rem;
-    top: 120%;
-    left: 35.5%;
   }
   header .hero .heroTitle {
     font-size: 3rem;
-  }
-  header .hero .arrowContainer {
-    left: 35%;
   }
   header .hero .arrowContainer .first {
     font-size: 2.4rem;
@@ -713,9 +703,6 @@ footer .footerContainer p {
   header .hero .heroTitle {
     font-size: 2.5rem;
   }
-  header .hero .arrowContainer {
-    left: 30%;
-  }
   header .hero .arrowContainer .first {
     font-size: 2rem;
   }
@@ -742,9 +729,6 @@ footer .footerContainer p {
   }
   header .hero .heroTitle {
     font-size: 2.2rem;
-  }
-  header .hero .arrowContainer {
-    top: 125%;
   }
   form .join i,
   form .saber i {

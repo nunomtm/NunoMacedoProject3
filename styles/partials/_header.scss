@@ -4,16 +4,16 @@ header {
     background-repeat: no-repeat;
     background-position-y: 50%;
     min-height: 95vh;
-    // max-width: 100vw;
 }
   
 .hero {
     display: flex;
+    flex-wrap: wrap;
     perspective: 1000px;
-    position: relative;
     img {
-        width: 75%; 
+        width: 31%; 
         padding-top: 5%;
+
         // Image Animmation
         animation-duration: 5s;
     }
@@ -22,20 +22,21 @@ header {
         align-items: center;
         overflow: hidden;
         transform: rotateX(40deg);
+        width: 69%;
         .heroTitle {
-            display: inline-block;
             width: 100%;
+            display: inline-block;
             margin: 0;
         }
     }
     //Style the arrow down
     .arrowContainer {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 100%;
-        left: 45%;
+        width: 100%;
+        margin-top: 10%;
         .first,
         .second,
         p {
@@ -43,11 +44,14 @@ header {
         }
         .first {
             font-size: 3.8rem;
-            position: absolute;
-            top: -11%;
         }
         .second {
             font-size: 4.5rem;
+            margin-top: -28px;
+        }
+        a {
+            text-decoration: none;
+            color: $primeryColor;
         }
         p {
             font-size: 1.8rem;
@@ -55,7 +59,6 @@ header {
         }
     }
 }
-
 
 // Hero Img Animation Starts Here
 @-webkit-keyframes slideInLeft {
@@ -106,8 +109,8 @@ header {
 
 @keyframes slideInUp {
   from {
-      -webkit-transform: translate3d(0, 200%, 0);
-      transform: translate3d(0, 200%, 0);
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
       visibility: visible;
   }
 

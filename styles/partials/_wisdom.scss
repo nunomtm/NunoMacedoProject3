@@ -1,10 +1,12 @@
 .wisdom {
     display: flex;
-    margin-bottom: 50px;
-    // height: 300px;
+    height: calc(100vh - 50px);
+    img {
+        padding-top: 60%;
+    }
     .quote {
         font-family: $secondaryFont;
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
         color: $primeryColor;
         align-self: center;

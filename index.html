@@ -23,42 +23,58 @@
             <div class="arrowContainer">
                 <i class="first animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
                 <i class="second animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
-                <p>Click to Play</p>
+                <p>
+                    <a href="#questions">Click to Play</a>
+                </p>
             </div>
         </div>
     </header>
 
-    <form action="">
+    <form id="questions" action="">
         <fieldset class="join">
             <p>Joining today who do you feel like?</p>
-            <input type="radio" name="join" id="rebel" value="jedi">
-            <label for="rebel">Resistance <i class="fas fa-jedi"></i></label>
-
-            <input type="radio" name="join" id="dark" value="vader">
-            <label for="dark">Dark Side <i class="fab fa-galactic-republic"></i></label>
+            <label>
+                <input type="radio" name="join" value="jedi">
+                Resistance
+                <i class="fas fa-jedi"></i>
+            </label>
+            
+            <label>
+                <input type="radio" name="join" value="vader">
+                Dark Side
+                <i class="fab fa-galactic-republic"></i></label>
+            </label>
         </fieldset>
 
         <fieldset class="saber">
             <p>Would you choose what color lightsaber?</p>
-            <input type="radio" name="saber" id="blue" value="blue">
-            <label for="blue">Blue</label> 
-            <img class="blueSaber" src="./assets/blueLightsaber.png" alt="">
+            <label>
+                <input type="radio" name="saber" value="blue">
+                <img class="blueSaber" src="./assets/blueLightsaber.png" alt="">
+                Blue
+            </label>
 
-            <input type="radio" name="saber" id="red" value="red">
-            <label for="red">Red</label>
-            <img class="redSaber" src="./assets/redLightsaber.png" alt="">
+            <label>
+                <input type="radio" name="saber" value="red">
+                Red
+                <img class="redSaber" src="./assets/redLightsaber.png" alt="">
+            </label>
         </fieldset>
             <div class="submit">
-                <input type="submit" value="Get Master Yoda Wisdom">
+                <!-- <a class="button" href="#getWisdom">Get Master Yoda Wisdom!</a> -->
+                    <input type="submit" value="Get Master Yoda Wisdom">
             </div>
     </form>
 
-    <section class="wisdom wrapper">
+    <section id="getWisdom" class="wisdom wrapper">
         <div>
             <img src="./assets/Yoda.gif" alt="gif of Yoda moving here and closing his eyes as he is thinking">
         </div>
         <div class="quote">
         </div>
+        <audio id="yoda">
+            <source src="./assets/yodaHelpYou.wav" type="audio/mpeg">
+        </audio>
     </section>
 
     <footer>
@@ -67,10 +83,6 @@
             <p>Yoda Quotes provided by www.yodaquotes.net</p>
         </div>
     </footer>
-
-    <audio id="yoda">
-        <source src="./assets/yodaHelpYou.wav" type="audio/mpeg">
-    </audio>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="./script.js"></script>

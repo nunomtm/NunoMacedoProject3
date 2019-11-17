@@ -1,11 +1,12 @@
 form {
+    height: 100vh;
     .join,
     .saber {
         background: $baseBackgroundColor;
         color: $primeryColor;
         text-align: center;
         margin: 0;
-        padding: 5%;
+        padding: 7%;
         border: none;
         border-bottom: 1px solid $primeryColor;
         p,
@@ -32,9 +33,11 @@ form {
             left: 56%;
         }
     }
+    input[type=radio] {
+        margin-right: 10px;
+    }   
     .submit {
         padding: 60px 0;
-        font-size: 1.8rem;
         text-align: center;
     }
     input[type=submit] {
@@ -51,7 +54,5 @@ form {
         border: 1px solid $primeryColor;
         color: $primeryColor;
     }
-    input[type=radio] {
-        margin-right: 10px;
-    }
+    
 }

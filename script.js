@@ -210,14 +210,7 @@ const rebel = {
 // The Function Start Here
 $(function() {
 
-    const playScroll = $(window).scrollTop();
-    $('.fa-angle-down, p').click(function () {
-        $('html, body').animate({scrollTop: playScroll + 580})
-    });
-
-    const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
-        $('html, body').animate({scrollTop: wisdomScroll + 970})
         $('audio#yoda')[0].play()
     });
 
@@ -232,7 +225,6 @@ $(function() {
         const saberOption = $('input[name=saber]:checked').val();
 
         const selection = rebel[joinOption];
-        const option = rebel[joinOption];
         const color = selection.filter((choice) => {
             if(choice.color === saberOption) {
                 return true;
