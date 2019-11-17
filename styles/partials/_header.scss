@@ -10,8 +10,8 @@ header {
     display: flex;
     perspective: 1000px;
     img {
-        width: 42%; 
-        // padding-top: 80px;
+        width: 75%; 
+        padding-top: 5%;
         // Image Animmation
         animation-duration: 5s;
     }
@@ -31,14 +31,14 @@ header {
         color: $primeryColor;
         font-size: 3.8rem;
         position: absolute;
-        top: 105%;
+        top: 100%;
         left: 46%;
     }
     i {
         color: $primeryColor;
         font-size: 4.5rem;
         position: absolute;
-        top: 107%;
+        top: 102%;
         left: 45.8%;
     }
     //Styles end here
@@ -47,7 +47,7 @@ header {
         font-style: italic;
         color: $primeryColor;
         position: absolute;
-        top: 111%;
+        top: 105%;
         left: 42.5%;
     }
 }

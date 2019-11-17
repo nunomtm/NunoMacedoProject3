@@ -318,7 +318,8 @@ header {
 }
 
 .hero img {
-  width: 42%;
+  width: 75%;
+  padding-top: 5%;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
@@ -345,7 +346,7 @@ header {
   color: #fee91c;
   font-size: 3.8rem;
   position: absolute;
-  top: 105%;
+  top: 100%;
   left: 46%;
 }
 
@@ -353,7 +354,7 @@ header {
   color: #fee91c;
   font-size: 4.5rem;
   position: absolute;
-  top: 107%;
+  top: 102%;
   left: 45.8%;
 }
 
@@ -362,7 +363,7 @@ header {
   font-style: italic;
   color: #fee91c;
   position: absolute;
-  top: 111%;
+  top: 105%;
   left: 42.5%;
 }
 
