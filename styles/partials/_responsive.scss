@@ -2,7 +2,7 @@
 
 @include mqTabletLand {
     header {
-        min-height: 60vh;
+        min-height: 80vh;
         .hero  {
             p {
                 left: 41.5%;
@@ -39,11 +39,8 @@
 
 @include mqTabletVert {
     header {
-        // min-height: 80vh;
+        min-height: 40vh;
         .hero {
-            // img {
-            //     width: 50%;
-            // }
             .heroTitle {
                 font-size: 5.3rem;
             }
@@ -93,11 +90,8 @@
 
 @media (max-width: 670px) {
     header {
-        min-height: 50vh;
+        min-height: 35vh;
         .hero {
-            // img {
-            //     width: 60%;
-            // }
             p {
                 left: 38%;
             }
@@ -135,9 +129,6 @@
     header {
         min-height: 30vh;
         .hero {
-            // img {
-            //     width: 60%;
-            // }
             p {
                 font-size: 1.5rem;
                 top: 120%;
@@ -181,11 +172,8 @@
 
 @include mqMobilePlus {
     header {
-        // min-height: 70vh;
+        min-height: 32vh;
         .hero {
-            // img {
-            //     width: 60%;
-            // }
             .heroTitle {
                 font-size: 2.5rem;
             }
@@ -255,7 +243,6 @@
 
 @include mqMobileSE {
     header {
-        // min-height: 40vh;
         .hero {
             .heroTitle {
                 font-size: 2rem;
