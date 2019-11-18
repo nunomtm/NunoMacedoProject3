@@ -212,7 +212,7 @@ $(function() {
 
     const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
-        $('html, body').animate({scrollTop: wisdomScroll + 970})
+        $('html, body').animate({scrollTop: wisdomScroll + 1200})
         $('audio#yoda')[0].play()
     });
 
