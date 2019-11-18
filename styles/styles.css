@@ -585,11 +585,11 @@ footer .footerContainer p {
   }
   form .saber .blueSaber {
     top: 56%;
-    left: 35%;
+    left: 33%;
   }
   form .saber .redSaber {
     top: 56%;
-    left: 59%;
+    left: 60%;
   }
   .wisdom img {
     width: 95%;
@@ -607,10 +607,10 @@ footer .footerContainer p {
     font-size: 5.3rem;
   }
   form .saber .blueSaber {
-    left: 30%;
+    left: 28%;
   }
   form .saber .redSaber {
-    left: 62%;
+    left: 64%;
   }
   .wisdom {
     height: 20vh;
@@ -648,6 +648,9 @@ footer .footerContainer p {
   form .saber .redSaber {
     top: 63%;
     left: 64%;
+  }
+  .wisdom {
+    min-height: 45vh;
   }
   .footerContainer {
     -webkit-box-orient: vertical;
@@ -690,10 +693,10 @@ footer .footerContainer p {
     font-size: 2rem;
   }
   form .saber .blueSaber {
-    left: 23%;
+    left: 21%;
   }
   form .saber .redSaber {
-    left: 64%;
+    left: 66%;
   }
   form .submit {
     font-size: 1.5rem;
@@ -721,10 +724,10 @@ footer .footerContainer p {
     margin-right: 5px;
   }
   form .saber .blueSaber {
-    left: 25%;
+    left: 24%;
   }
   form .saber .redSaber {
-    left: 66%;
+    left: 67%;
   }
   .wisdom {
     min-height: 45vh;
@@ -739,7 +742,7 @@ footer .footerContainer p {
     font-size: 2.2rem;
   }
   form {
-    height: 75vh;
+    height: 80vh;
   }
   form .join,
   form .saber {
@@ -754,10 +757,10 @@ footer .footerContainer p {
     margin-right: 20px;
   }
   form .saber .blueSaber {
-    left: 18%;
+    left: 17%;
   }
   form .saber .redSaber {
-    left: 68%;
+    left: 69%;
   }
   form input[type=submit] {
     letter-spacing: 1px;
