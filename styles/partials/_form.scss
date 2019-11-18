@@ -45,14 +45,13 @@ form {
         padding: 10px 20px;
         border: none;
         border: 1px solid transparent;
-        transition: 0.35s;
-        transition-delay: 0.15s;
+        transition: 0.25s;
+        transition-delay: 0.1s;
     }
     input[type=submit]:hover, 
     input[type=submit]:focus {
         background: $baseBackgroundColor;
         border: 1px solid $primeryColor;
         color: $primeryColor;
-    }
-    
+    }   
 }

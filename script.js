@@ -210,7 +210,9 @@ const rebel = {
 // The Function Start Here
 $(function() {
 
+    const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
+        $('html, body').animate({scrollTop: wisdomScroll + 970})
         $('audio#yoda')[0].play()
     });
 

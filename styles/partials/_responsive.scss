@@ -2,34 +2,35 @@
 
 @include mqTabletLand {
     header {
-        min-height: 80vh;
+        min-height: 90vh;
         .hero  {
-            // p {
-            //     left: 41.5%;
-            // }
             .heroTitle {
                 font-size: 6.5rem;
             }
-            // .arrowContainer {
-            //     top: 115%;
-            // }
+            .arrowContainer {
+                margin-top: 25%;
+            }
         }
     }
     form {
+        .join,
+        .saber {
+            padding: 9%;
+        }
         .saber {
             .blueSaber {
-                top: 57%;
-                left: 36%;
+                top: 56%;
+                left: 35%;
             }
             .redSaber {
-                top: 57%;
+                top: 56%;
                 left: 59%;
             }
         }
     }
     .wisdom {
         img {
-            width: 80%;
+            width: 95%;
         }
         .quote {
             width: 400px;
@@ -44,41 +45,28 @@
             .heroTitle {
                 font-size: 5.3rem;
             }
-            // .arrowContainer {
-            //     .first {
-            //         font-size: 3rem;
-            //     }
-            //     .second {
-            //         font-size: 4rem;
-            //     }
-            // }
         } 
     }
     form {
-        .join,
-        .saber {
-            padding: 8%;
-        }
         .saber {
             .blueSaber {
-                top: 59%;
-                left: 31%;
+                left: 30%;
             }
             .redSaber {
-                top: 59%;
-                left: 61.5%;
+                left: 62%;
             }
         }
     }
     .wisdom {
+        height: 20vh;
         flex-direction: column-reverse;
         align-items: center;
         img {
-            padding-top: 10%;
-            width: 70%;
+            padding: 20% 0;
+            width: 100%;
         }
         .quote {
-            width: 350px;
+            width: 100%;
         }
     }  
     footer {
@@ -92,30 +80,20 @@
     header {
         min-height: 35vh;
         .hero {
-            // p {
-            //     left: 38%;
-            // }
             .heroTitle {
                 font-size: 4.5rem;
             }
-            // .arrowContainer {
-            //     left: 40%;
-            // }
         } 
     }
     form {
-        .join,
-        .saber {
-            padding: 8%;
-        }
         .saber {
             .blueSaber {
                 top: 63%;
-                left: 28%;
+                left: 27%;
             }
             .redSaber {
                 top: 63%;
-                left: 63.5%;
+                left: 64%;
             }
         }
     }
@@ -131,19 +109,17 @@
         .hero {
             p {
                 font-size: 1.5rem;
-                // top: 120%;
-                // left: 35.5%;
             }
             .heroTitle {
                 font-size: 3rem;
             }
             .arrowContainer {
-                // left: 35%;
                 .first {
                     font-size: 2.4rem;
                 }
                 .second {
                     font-size: 3.2rem;
+                    margin-top: -18px;
                 }
             }
         }
@@ -161,7 +137,10 @@
         } 
         .saber {
             .blueSaber {
-                left: 24%;
+                left: 23%;
+            }
+            .redSaber {
+                left: 64%;
             }
         }
         .submit {
@@ -178,7 +157,6 @@
                 font-size: 2.5rem;
             }
             .arrowContainer {
-                // left: 30%;
                 .first {
                     font-size: 2rem;
                 }
@@ -192,20 +170,22 @@
         }
     }
     form {
+        .join label, 
+        .saber label {
+            margin-right: 5px;
+        }
         .saber {
             .blueSaber {
-                left: 20%;
+                left: 25%;
             }
             .redSaber {
-                left: 65.5%;
+                left: 66%;
             }
         }
     }
     .wisdom {
-        .quote {
-            width: 320px;
-        }
-    }  
+        min-height: 45vh;
+    }
 }
 
 @include mqMobileX {
@@ -215,14 +195,13 @@
             .heroTitle {
                 font-size: 2.2rem;
             }
-            // .arrowContainer {
-            //     top: 125%;
-            // }
         }
     }
     form {
+        height: 75vh;
         .join,
         .saber {
+            padding: 15% 0;
             i {
                 font-size: 1.6rem;
             }
@@ -230,12 +209,21 @@
                 margin-right: 20px;
             }
         }
+        .saber {
+            .blueSaber {
+                left: 18%;
+            }
+            .redSaber {
+                left: 68%;
+            }
+        }
+        input[type=submit] {
+            letter-spacing: 1px;
+        }
     }
     .wisdom {
-        .quote {
-            width: 300px;
-        }
-    }  
+        min-height: 70vh;
+    }
     .footerContainer p {
         text-align: center;
     }
@@ -259,10 +247,10 @@
         }
         .saber {
             .blueSaber {
-                left: 15%;
+                left: 11%;
             }
             .redSaber {
-                left: 69.5%;
+                left: 73%;
             }
         }
         input[type=submit] {
@@ -270,8 +258,6 @@
         }
     }
     .wisdom {
-        .quote {
-            width: 255px;
-        }
+        min-height: 125vh;
     }  
 }

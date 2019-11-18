@@ -276,8 +276,10 @@ h1 {
   margin: 0;
 }
 
-.submit {
+input[type=submit] {
   font-family: "StarWars";
+  font-size: 1.8rem;
+  letter-spacing: 3px;
 }
 
 p,
@@ -504,10 +506,10 @@ form input[type=submit] {
   padding: 10px 20px;
   border: none;
   border: 1px solid transparent;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 form input[type=submit]:hover,
@@ -569,21 +571,28 @@ footer .footerContainer p {
 
 @media (max-width: 1024px) {
   header {
-    min-height: 80vh;
+    min-height: 90vh;
   }
   header .hero .heroTitle {
     font-size: 6.5rem;
   }
+  header .hero .arrowContainer {
+    margin-top: 25%;
+  }
+  form .join,
+  form .saber {
+    padding: 9%;
+  }
   form .saber .blueSaber {
-    top: 57%;
-    left: 36%;
+    top: 56%;
+    left: 35%;
   }
   form .saber .redSaber {
-    top: 57%;
+    top: 56%;
     left: 59%;
   }
   .wisdom img {
-    width: 80%;
+    width: 95%;
   }
   .wisdom .quote {
     width: 400px;
@@ -597,19 +606,14 @@ footer .footerContainer p {
   header .hero .heroTitle {
     font-size: 5.3rem;
   }
-  form .join,
-  form .saber {
-    padding: 8%;
-  }
   form .saber .blueSaber {
-    top: 59%;
-    left: 31%;
+    left: 30%;
   }
   form .saber .redSaber {
-    top: 59%;
-    left: 61.5%;
+    left: 62%;
   }
   .wisdom {
+    height: 20vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -619,11 +623,11 @@ footer .footerContainer p {
             align-items: center;
   }
   .wisdom img {
-    padding-top: 10%;
-    width: 70%;
+    padding: 20% 0;
+    width: 100%;
   }
   .wisdom .quote {
-    width: 350px;
+    width: 100%;
   }
   footer .footerContainer p {
     font-size: 1.5rem;
@@ -637,17 +641,13 @@ footer .footerContainer p {
   header .hero .heroTitle {
     font-size: 4.5rem;
   }
-  form .join,
-  form .saber {
-    padding: 8%;
-  }
   form .saber .blueSaber {
     top: 63%;
-    left: 28%;
+    left: 27%;
   }
   form .saber .redSaber {
     top: 63%;
-    left: 63.5%;
+    left: 64%;
   }
   .footerContainer {
     -webkit-box-orient: vertical;
@@ -675,6 +675,7 @@ footer .footerContainer p {
   }
   header .hero .arrowContainer .second {
     font-size: 3.2rem;
+    margin-top: -18px;
   }
   form .join,
   form .saber {
@@ -689,7 +690,10 @@ footer .footerContainer p {
     font-size: 2rem;
   }
   form .saber .blueSaber {
-    left: 24%;
+    left: 23%;
+  }
+  form .saber .redSaber {
+    left: 64%;
   }
   form .submit {
     font-size: 1.5rem;
@@ -712,14 +716,18 @@ footer .footerContainer p {
   header .hero .arrowContainer p {
     font-size: 1.5rem;
   }
+  form .join label,
+  form .saber label {
+    margin-right: 5px;
+  }
   form .saber .blueSaber {
-    left: 20%;
+    left: 25%;
   }
   form .saber .redSaber {
-    left: 65.5%;
+    left: 66%;
   }
-  .wisdom .quote {
-    width: 320px;
+  .wisdom {
+    min-height: 45vh;
   }
 }
 
@@ -730,6 +738,13 @@ footer .footerContainer p {
   header .hero .heroTitle {
     font-size: 2.2rem;
   }
+  form {
+    height: 75vh;
+  }
+  form .join,
+  form .saber {
+    padding: 15% 0;
+  }
   form .join i,
   form .saber i {
     font-size: 1.6rem;
@@ -738,8 +753,17 @@ footer .footerContainer p {
   form .saber label {
     margin-right: 20px;
   }
-  .wisdom .quote {
-    width: 300px;
+  form .saber .blueSaber {
+    left: 18%;
+  }
+  form .saber .redSaber {
+    left: 68%;
+  }
+  form input[type=submit] {
+    letter-spacing: 1px;
+  }
+  .wisdom {
+    min-height: 70vh;
   }
   .footerContainer p {
     text-align: center;
@@ -763,16 +787,16 @@ footer .footerContainer p {
     padding-bottom: 5%;
   }
   form .saber .blueSaber {
-    left: 15%;
+    left: 11%;
   }
   form .saber .redSaber {
-    left: 69.5%;
+    left: 73%;
   }
   form input[type=submit] {
     padding: 8px 0px;
   }
-  .wisdom .quote {
-    width: 255px;
+  .wisdom {
+    min-height: 125vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -36,32 +36,12 @@ h1 {
     margin: 0;
 }
 
-// Form Button Styles Start 
-.submit {
+// Form Submit Styles Start 
+input[type=submit] {
     font-family: "StarWars";
+    font-size: 1.8rem;
+    letter-spacing: 3px;
 }
-
-// .button {
-//     font-family: "StarWars";
-//     font-size: 1.8rem;
-//     color: $baseBackgroundColor;
-//     background: $primeryColor;
-//     text-decoration: none;
-//     letter-spacing: 3px;
-//     padding: 10px 20px;
-//     border: none;
-//     border: 1px solid transparent;
-//     transition: 0.35s;
-//     transition-delay: 0.15s;
-// }
-
-// .button:hover, 
-// .button:focus {
-//     background: $baseBackgroundColor;
-//     border: 1px solid $primeryColor;
-//     color: $primeryColor;
-// }
-// Form Button Styles End
 
 p,
 label,
