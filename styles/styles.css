@@ -730,7 +730,7 @@ footer .footerContainer p {
     left: 67%;
   }
   .wisdom {
-    min-height: 45vh;
+    min-height: 85vh;
   }
 }
 
@@ -766,7 +766,7 @@ footer .footerContainer p {
     letter-spacing: 1px;
   }
   .wisdom {
-    min-height: 75vh;
+    min-height: 85vh;
   }
   .footerContainer p {
     text-align: center;
