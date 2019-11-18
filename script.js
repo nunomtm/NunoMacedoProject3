@@ -210,16 +210,20 @@ const rebel = {
 // The Function Start Here
 $(function() {
 
+    //  The scrool down after they push the button to get the Master Yoda quote
     const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
         $('html, body').animate({scrollTop: wisdomScroll + 1500})
         $('audio#yoda')[0].play()
     });
+    // End Here
 
+    // Function to randomize the quote that will display
     function randomQuote(optionArray) {
         const item = Math.floor(Math.random() * optionArray.length);
         return optionArray[item];
     }
+    // End Here
 
     $("form").on("submit", function(e) {
         e.preventDefault();
@@ -235,9 +239,11 @@ $(function() {
     
         const quoteToDisplay = randomQuote(color);
 
+        // Append to the html once the quote button in clicked
         $('.quote').html(`<p class="quote">${quoteToDisplay.quote}</p>`);
 
         $('.quote').css('display', 'block');
+        // End Here
 
     });  
 });

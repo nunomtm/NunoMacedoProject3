@@ -294,8 +294,8 @@ input {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: #ffffff;
-  color: black;
+  background: #000;
+  color: #000;
 }
 
 .skipLink:focus {
@@ -453,8 +453,8 @@ form {
 form .join,
 form .saber {
   background: #000;
-  color: #fee91c;
   text-align: center;
+  color: #fee91c;
   margin: 0;
   padding: 7%;
   border: none;
@@ -590,9 +590,6 @@ footer .footerContainer p {
   form .saber .redSaber {
     top: 56%;
     left: 60%;
-  }
-  .wisdom {
-    height: 100vh;
   }
   .wisdom img {
     width: 95%;
