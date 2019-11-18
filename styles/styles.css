@@ -651,9 +651,6 @@ footer .footerContainer p {
     top: 63%;
     left: 64%;
   }
-  .wisdom {
-    height: 60vh;
-  }
   .footerContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -731,9 +728,6 @@ footer .footerContainer p {
   form .saber .redSaber {
     left: 67%;
   }
-  .wisdom {
-    height: 100vh;
-  }
 }
 
 @media (max-width: 375px) {
@@ -767,9 +761,6 @@ footer .footerContainer p {
   form input[type=submit] {
     letter-spacing: 1px;
   }
-  .wisdom {
-    height: 100vh;
-  }
   .footerContainer p {
     text-align: center;
   }
@@ -799,9 +790,6 @@ footer .footerContainer p {
   }
   form input[type=submit] {
     padding: 8px 0px;
-  }
-  .wisdom {
-    height: 125vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

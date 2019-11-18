@@ -98,9 +98,9 @@
             }
         }
     }
-    .wisdom {
-        height: 60vh;
-    }
+    // .wisdom {
+    //     height: 60vh;
+    // }
     .footerContainer {
         flex-direction: column;
         align-items: center;
@@ -187,9 +187,9 @@
             }
         }
     }
-    .wisdom {
-        height: 100vh;
-    }
+    // .wisdom {
+    //     height: 100vh;
+    // }
 }
 
 @include mqMobileX {
@@ -225,9 +225,9 @@
             letter-spacing: 1px;
         }
     }
-    .wisdom {
-        height: 100vh;
-    }
+    // .wisdom {
+    //     height: 100vh;
+    // }
     .footerContainer p {
         text-align: center;
     }
@@ -261,7 +261,7 @@
             padding: 8px 0px;
         }
     }
-    .wisdom {
-        height: 125vh;
-    }  
+    // .wisdom {
+    //     min-height: 125vh;
+    // }  
 }
