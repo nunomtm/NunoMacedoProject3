@@ -29,6 +29,7 @@
         }
     }
     .wisdom {
+        height: 100vh;
         img {
             width: 95%;
         }
@@ -58,7 +59,7 @@
         }
     }
     .wisdom {
-        height: 20vh;
+        // height: 20vh;
         flex-direction: column-reverse;
         align-items: center;
         img {
@@ -98,7 +99,7 @@
         }
     }
     .wisdom {
-        min-height: 45vh;
+        height: 60vh;
     }
     .footerContainer {
         flex-direction: column;
@@ -187,7 +188,7 @@
         }
     }
     .wisdom {
-        min-height: 85vh;
+        height: 100vh;
     }
 }
 
@@ -225,7 +226,7 @@
         }
     }
     .wisdom {
-        min-height: 85vh;
+        height: 100vh;
     }
     .footerContainer p {
         text-align: center;
@@ -261,6 +262,6 @@
         }
     }
     .wisdom {
-        min-height: 125vh;
+        height: 125vh;
     }  
 }

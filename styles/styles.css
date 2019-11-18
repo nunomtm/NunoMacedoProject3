@@ -591,6 +591,9 @@ footer .footerContainer p {
     top: 56%;
     left: 60%;
   }
+  .wisdom {
+    height: 100vh;
+  }
   .wisdom img {
     width: 95%;
   }
@@ -613,7 +616,6 @@ footer .footerContainer p {
     left: 64%;
   }
   .wisdom {
-    height: 20vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -650,7 +652,7 @@ footer .footerContainer p {
     left: 64%;
   }
   .wisdom {
-    min-height: 45vh;
+    height: 60vh;
   }
   .footerContainer {
     -webkit-box-orient: vertical;
@@ -730,7 +732,7 @@ footer .footerContainer p {
     left: 67%;
   }
   .wisdom {
-    min-height: 85vh;
+    height: 100vh;
   }
 }
 
@@ -766,7 +768,7 @@ footer .footerContainer p {
     letter-spacing: 1px;
   }
   .wisdom {
-    min-height: 85vh;
+    height: 100vh;
   }
   .footerContainer p {
     text-align: center;
@@ -799,7 +801,7 @@ footer .footerContainer p {
     padding: 8px 0px;
   }
   .wisdom {
-    min-height: 125vh;
+    height: 125vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
