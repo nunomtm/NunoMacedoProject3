@@ -1,0 +1,806 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "StarWars";
+  src: url(../Font/starWarsFont.ttf) format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  cursor: url(../assets/mouseLightSaber.png), auto;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: "StarWars";
+  font-size: 7.5rem;
+  color: #fee91c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+input[type=submit] {
+  font-family: "StarWars";
+  letter-spacing: 3px;
+}
+
+p,
+label,
+input {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Skip-line for accessibility */
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #ffffff;
+  color: black;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+
+/* - */
+header {
+  background-image: url(../assets/starWarsBackgrounds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  min-height: 95vh;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.hero img {
+  width: 65%;
+  padding-top: 80px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.hero .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transform: rotateX(40deg);
+          transform: rotateX(40deg);
+}
+
+.hero .heroTitle {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+.hero .first {
+  color: #fee91c;
+  font-size: 3.8rem;
+  position: absolute;
+  top: 105%;
+  left: 46%;
+}
+
+.hero i {
+  color: #fee91c;
+  font-size: 4.5rem;
+  position: absolute;
+  top: 107%;
+  left: 45.8%;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #fee91c;
+  position: absolute;
+  top: 111%;
+  left: 42.5%;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+form .join,
+form .saber {
+  background: #000;
+  color: #fee91c;
+  text-align: center;
+  margin: 0;
+  padding: 5%;
+  border: none;
+  border-bottom: 1px solid #fee91c;
+}
+
+form .join p,
+form .join label,
+form .saber p,
+form .saber label {
+  font-size: 3rem;
+  color: #fee91c;
+  margin-top: 0;
+}
+
+form .join label,
+form .saber label {
+  margin-right: 30px;
+}
+
+form .saber {
+  position: relative;
+  border: none;
+}
+
+form .saber .blueSaber {
+  position: absolute;
+  top: 56%;
+  left: 40%;
+}
+
+form .saber .redSaber {
+  position: absolute;
+  top: 56%;
+  left: 56%;
+}
+
+form .submit {
+  padding: 60px 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+form input[type=submit] {
+  background: #fee91c;
+  padding: 10px 20px;
+  border: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+form input[type=submit]:hover,
+form input[type=submit]:focus {
+  background: #000;
+  border: 1px solid #fee91c;
+  color: #fee91c;
+}
+
+form input[type=radio] {
+  margin-right: 10px;
+}
+
+.wisdom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.wisdom .quote {
+  font-family: "Kanit", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #fee91c;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 40px 40px 40px 0;
+  -webkit-box-shadow: 5px 5px 10px #fee91c;
+          box-shadow: 5px 5px 10px #fee91c;
+  border: 2px solid #fee91c;
+  display: none;
+}
+
+.wisdom .quote p {
+  padding: 15px;
+}
+
+footer {
+  border-top: 2px solid #fee91c;
+}
+
+footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footerContainer p {
+  font-size: 1.8rem;
+  color: #fee91c;
+}
+
+@media (max-width: 1024px) {
+  header {
+    min-height: 75vh;
+  }
+  header .heroTitle {
+    font-size: 6.5rem;
+  }
+  header .hero img {
+    width: 70%;
+  }
+  header .hero p {
+    left: 41.5%;
+  }
+  form .saber .blueSaber {
+    top: 57%;
+    left: 36%;
+  }
+  form .saber .redSaber {
+    top: 57%;
+    left: 59%;
+  }
+  .wisdom img {
+    width: 80%;
+  }
+  .wisdom .quote {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    min-height: 46vh;
+  }
+  header .heroTitle {
+    font-size: 5.3rem;
+  }
+  header .hero img {
+    width: 100%;
+  }
+  header .hero .first {
+    font-size: 3.3rem;
+    top: 104%;
+    left: 46.1%;
+  }
+  header .hero i {
+    font-size: 4rem;
+    top: 107%;
+    left: 45.8%;
+  }
+  header .hero p {
+    left: 40%;
+  }
+  form .join,
+  form .saber {
+    padding: 8%;
+  }
+  form .saber .blueSaber {
+    top: 59%;
+    left: 31%;
+  }
+  form .saber .redSaber {
+    top: 59%;
+    left: 61.5%;
+  }
+  .wisdom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wisdom img {
+    padding-top: 10%;
+    width: 100%;
+  }
+  .wisdom .quote {
+    width: 350px;
+  }
+  footer .footerContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 670px) {
+  header {
+    min-height: 55vh;
+  }
+  header .heroTitle {
+    font-size: 4.5rem;
+  }
+  header .hero p {
+    left: 38%;
+  }
+  form .join,
+  form .saber {
+    padding: 8%;
+  }
+  form .saber .blueSaber {
+    top: 63%;
+    left: 28%;
+  }
+  form .saber .redSaber {
+    top: 63%;
+    left: 63.5%;
+  }
+  .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    min-height: 42vh;
+  }
+  header .heroTitle {
+    font-size: 3rem;
+  }
+  header .hero p {
+    font-size: 1.5rem;
+    top: 120%;
+    left: 35.5%;
+  }
+  header .hero .first {
+    font-size: 2.8rem;
+    top: 112%;
+  }
+  header .hero i {
+    font-size: 3.5rem;
+    top: 115%;
+    left: 45.5%;
+  }
+  form .join,
+  form .saber {
+    margin: 1px;
+  }
+  form .join p,
+  form .saber p {
+    font-size: 2.4rem;
+  }
+  form .join label,
+  form .saber label {
+    font-size: 2rem;
+  }
+  form .saber .blueSaber {
+    left: 24%;
+  }
+  form .submit {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  header {
+    min-height: 38vh;
+  }
+  header .heroTitle {
+    font-size: 2.5rem;
+  }
+  header .hero img {
+    padding-top: 40px;
+  }
+  header .hero .first {
+    font-size: 2.3rem;
+    top: 112%;
+  }
+  header .hero i {
+    font-size: 3rem;
+    top: 115%;
+    left: 45.5%;
+  }
+  form .saber .blueSaber {
+    left: 20%;
+  }
+  form .saber .redSaber {
+    left: 65.5%;
+  }
+  .wisdom .quote {
+    width: 320px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    min-height: 45vh;
+  }
+  header .heroTitle {
+    font-size: 2.2rem;
+  }
+  header .hero .first {
+    top: 127%;
+  }
+  header .hero i {
+    top: 130%;
+  }
+  header .hero p {
+    top: 135%;
+    left: 34.5%;
+  }
+  form .join i,
+  form .saber i {
+    font-size: 1.6rem;
+  }
+  form .join label,
+  form .saber label {
+    margin-right: 20px;
+  }
+  .wisdom .quote {
+    width: 300px;
+  }
+  .footerContainer p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    min-height: 55vh;
+  }
+  header .heroTitle {
+    font-size: 2.5rem;
+  }
+  header .hero .first {
+    top: 126%;
+  }
+  header .hero i {
+    top: 130%;
+  }
+  header .hero p {
+    left: 32.5%;
+  }
+  form .join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .join label:nth-child(3) {
+    padding-bottom: 5%;
+  }
+  form .saber .blueSaber {
+    left: 15%;
+  }
+  form .saber .redSaber {
+    left: 69.5%;
+  }
+  form input[type=submit] {
+    padding: 8px 0px;
+  }
+  .wisdom .quote {
+    width: 255px;
+  }
+}

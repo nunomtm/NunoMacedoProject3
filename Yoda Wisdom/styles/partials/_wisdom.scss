@@ -1,0 +1,21 @@
+.wisdom {
+    display: flex;
+    margin-bottom: 50px;
+    // height: 300px;
+    .quote {
+        font-family: $secondaryFont;
+        font-size: 2rem;
+        text-align: center;
+        color: $primeryColor;
+        align-self: center;
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 40px 40px 40px 0;
+        box-shadow: 5px 5px 10px $primeryColor;
+        border: 2px solid $primeryColor;
+        display: none;
+        p {
+            padding: 15px;
+        }
+    }
+}
