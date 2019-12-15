@@ -2,7 +2,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 * {
@@ -27,7 +26,7 @@ img {
 
 h1 {
     font-family: "StarWars";
-    font-size: 9rem;
+    font-size: 7.5rem;
     color: $primeryColor;
     text-align: center;
     text-transform: uppercase;
@@ -36,31 +35,29 @@ h1 {
     margin: 0;
 }
 
-// Form Submit Styles Start 
 input[type=submit] {
     font-family: "StarWars";
-    font-size: 1.8rem;
     letter-spacing: 3px;
 }
 
 p,
 label,
 input {
-    font-family: $secondaryFont;
+    font-family: 'Kanit', sans-serif;
 }
 
 /* Skip-line for accessibility */
 .skipLink {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
-  background: $baseBackgroundColor;
-  color: $baseBackgroundColor;
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: $secondaryBackgroundColor;
+    color: black;
 }
 
 .skipLink:focus {
-  left: 0;
+    left: 0;
 }
 /* - */
 

@@ -242,7 +242,6 @@ html {
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -267,7 +266,7 @@ img {
 
 h1 {
   font-family: "StarWars";
-  font-size: 9rem;
+  font-size: 7.5rem;
   color: #fee91c;
   text-align: center;
   text-transform: uppercase;
@@ -278,14 +277,13 @@ h1 {
 
 input[type=submit] {
   font-family: "StarWars";
-  font-size: 1.8rem;
   letter-spacing: 3px;
 }
 
 p,
 label,
 input {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 /* Skip-line for accessibility */
@@ -294,8 +292,8 @@ input {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: #000;
-  color: #000;
+  background: #ffffff;
+  color: black;
 }
 
 .skipLink:focus {
@@ -311,19 +309,27 @@ header {
   min-height: 95vh;
 }
 
+header a {
+  margin-left: 2%;
+}
+
+header a .fa-info-circle {
+  font-size: 3rem;
+  color: #fee91c;
+  margin-top: 1%;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
 
 .hero img {
-  width: 31%;
-  padding-top: 5%;
+  width: 65%;
+  padding-top: 40px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
@@ -338,54 +344,37 @@ header {
   overflow: hidden;
   -webkit-transform: rotateX(40deg);
           transform: rotateX(40deg);
-  width: 69%;
 }
 
-.hero .titleContainer .heroTitle {
-  width: 100%;
+.hero .heroTitle {
   display: inline-block;
+  width: 100%;
   margin: 0;
 }
 
-.hero .arrowContainer {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin-top: 10%;
-}
-
-.hero .arrowContainer .first,
-.hero .arrowContainer .second,
-.hero .arrowContainer p {
+.hero .first {
   color: #fee91c;
-}
-
-.hero .arrowContainer .first {
   font-size: 3.8rem;
+  position: absolute;
+  top: 105%;
+  left: 46%;
 }
 
-.hero .arrowContainer .second {
-  font-size: 4.5rem;
-  margin-top: -28px;
-}
-
-.hero .arrowContainer a {
-  text-decoration: none;
+.hero i {
   color: #fee91c;
+  font-size: 4.5rem;
+  position: absolute;
+  top: 107%;
+  left: 45.8%;
 }
 
-.hero .arrowContainer p {
+.hero p {
   font-size: 1.8rem;
-  margin-top: 0;
+  font-style: italic;
+  color: #fee91c;
+  position: absolute;
+  top: 111%;
+  left: 42.5%;
 }
 
 @-webkit-keyframes slideInLeft {
@@ -431,8 +420,8 @@ header {
 
 @keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
     visibility: visible;
   }
   to {
@@ -446,17 +435,13 @@ header {
   animation-name: slideInUp;
 }
 
-form {
-  height: 100vh;
-}
-
 form .join,
 form .saber {
   background: #000;
-  text-align: center;
   color: #fee91c;
+  text-align: center;
   margin: 0;
-  padding: 7%;
+  padding: 5%;
   border: none;
   border-bottom: 1px solid #fee91c;
 }
@@ -492,12 +477,9 @@ form .saber .redSaber {
   left: 56%;
 }
 
-form input[type=radio] {
-  margin-right: 10px;
-}
-
 form .submit {
   padding: 60px 0;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -506,10 +488,10 @@ form input[type=submit] {
   padding: 10px 20px;
   border: none;
   border: 1px solid transparent;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 form input[type=submit]:hover,
@@ -519,20 +501,36 @@ form input[type=submit]:focus {
   color: #fee91c;
 }
 
+form input[type=radio] {
+  margin-right: 10px;
+}
+
+#swal2-title > strong:nth-child(1) {
+  font-size: 3rem;
+}
+
+#swal2-content {
+  font-size: 1.8rem;
+}
+
+.swal2-popup {
+  width: 50%;
+}
+
+.swal2-confirm {
+  font-size: 1.6rem;
+}
+
 .wisdom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - 50px);
-}
-
-.wisdom img {
-  padding-top: 60%;
+  margin-bottom: 50px;
 }
 
 .wisdom .quote {
   font-family: "Kanit", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   color: #fee91c;
   -ms-flex-item-align: center;
@@ -571,28 +569,27 @@ footer .footerContainer p {
 
 @media (max-width: 1024px) {
   header {
-    min-height: 90vh;
+    min-height: 75vh;
   }
-  header .hero .heroTitle {
+  header .heroTitle {
     font-size: 6.5rem;
   }
-  header .hero .arrowContainer {
-    margin-top: 25%;
+  header .hero img {
+    width: 70%;
   }
-  form .join,
-  form .saber {
-    padding: 9%;
+  header .hero p {
+    left: 41.5%;
   }
   form .saber .blueSaber {
-    top: 56%;
-    left: 33%;
+    top: 57%;
+    left: 36%;
   }
   form .saber .redSaber {
-    top: 56%;
-    left: 60%;
+    top: 57%;
+    left: 59%;
   }
   .wisdom img {
-    width: 95%;
+    width: 80%;
   }
   .wisdom .quote {
     width: 400px;
@@ -601,16 +598,38 @@ footer .footerContainer p {
 
 @media (max-width: 768px) {
   header {
-    min-height: 40vh;
+    min-height: 46vh;
   }
-  header .hero .heroTitle {
+  header .heroTitle {
     font-size: 5.3rem;
   }
+  header .hero img {
+    width: 100%;
+  }
+  header .hero .first {
+    font-size: 3.3rem;
+    top: 104%;
+    left: 46.1%;
+  }
+  header .hero i {
+    font-size: 4rem;
+    top: 107%;
+    left: 45.8%;
+  }
+  header .hero p {
+    left: 40%;
+  }
+  form .join,
+  form .saber {
+    padding: 8%;
+  }
   form .saber .blueSaber {
-    left: 28%;
+    top: 59%;
+    left: 31%;
   }
   form .saber .redSaber {
-    left: 64%;
+    top: 59%;
+    left: 61.5%;
   }
   .wisdom {
     -webkit-box-orient: vertical;
@@ -622,11 +641,11 @@ footer .footerContainer p {
             align-items: center;
   }
   .wisdom img {
-    padding: 20% 0;
+    padding-top: 10%;
     width: 100%;
   }
   .wisdom .quote {
-    width: 100%;
+    width: 350px;
   }
   footer .footerContainer p {
     font-size: 1.5rem;
@@ -635,18 +654,25 @@ footer .footerContainer p {
 
 @media (max-width: 670px) {
   header {
-    min-height: 35vh;
+    min-height: 55vh;
   }
-  header .hero .heroTitle {
+  header .heroTitle {
     font-size: 4.5rem;
+  }
+  header .hero p {
+    left: 38%;
+  }
+  form .join,
+  form .saber {
+    padding: 8%;
   }
   form .saber .blueSaber {
     top: 63%;
-    left: 27%;
+    left: 28%;
   }
   form .saber .redSaber {
     top: 63%;
-    left: 64%;
+    left: 63.5%;
   }
   .footerContainer {
     -webkit-box-orient: vertical;
@@ -661,20 +687,24 @@ footer .footerContainer p {
 
 @media (max-width: 480px) {
   header {
-    min-height: 30vh;
+    min-height: 42vh;
+  }
+  header .heroTitle {
+    font-size: 3rem;
   }
   header .hero p {
     font-size: 1.5rem;
+    top: 120%;
+    left: 35.5%;
   }
-  header .hero .heroTitle {
-    font-size: 3rem;
+  header .hero .first {
+    font-size: 2.8rem;
+    top: 112%;
   }
-  header .hero .arrowContainer .first {
-    font-size: 2.4rem;
-  }
-  header .hero .arrowContainer .second {
-    font-size: 3.2rem;
-    margin-top: -18px;
+  header .hero i {
+    font-size: 3.5rem;
+    top: 115%;
+    left: 45.5%;
   }
   form .join,
   form .saber {
@@ -689,10 +719,7 @@ footer .footerContainer p {
     font-size: 2rem;
   }
   form .saber .blueSaber {
-    left: 21%;
-  }
-  form .saber .redSaber {
-    left: 66%;
+    left: 24%;
   }
   form .submit {
     font-size: 1.5rem;
@@ -701,45 +728,50 @@ footer .footerContainer p {
 
 @media (max-width: 415px) {
   header {
-    min-height: 32vh;
+    min-height: 43vh;
   }
-  header .hero .heroTitle {
+  header .heroTitle {
     font-size: 2.5rem;
   }
-  header .hero .arrowContainer .first {
-    font-size: 2rem;
+  header .hero img {
+    padding-top: 40px;
   }
-  header .hero .arrowContainer .second {
-    font-size: 2.8rem;
+  header .hero .first {
+    font-size: 2.3rem;
+    top: 112%;
   }
-  header .hero .arrowContainer p {
-    font-size: 1.5rem;
-  }
-  form .join label,
-  form .saber label {
-    margin-right: 5px;
+  header .hero i {
+    font-size: 3rem;
+    top: 115%;
+    left: 45.5%;
   }
   form .saber .blueSaber {
-    left: 24%;
+    left: 20%;
   }
   form .saber .redSaber {
-    left: 67%;
+    left: 65.5%;
+  }
+  .wisdom .quote {
+    width: 320px;
   }
 }
 
 @media (max-width: 375px) {
   header {
-    min-height: 35vh;
+    min-height: 48vh;
   }
-  header .hero .heroTitle {
+  header .heroTitle {
     font-size: 2.2rem;
   }
-  form {
-    height: 80vh;
+  header .hero .first {
+    top: 127%;
   }
-  form .join,
-  form .saber {
-    padding: 15% 0;
+  header .hero i {
+    top: 130%;
+  }
+  header .hero p {
+    top: 135%;
+    left: 34.5%;
   }
   form .join i,
   form .saber i {
@@ -749,14 +781,8 @@ footer .footerContainer p {
   form .saber label {
     margin-right: 20px;
   }
-  form .saber .blueSaber {
-    left: 17%;
-  }
-  form .saber .redSaber {
-    left: 69%;
-  }
-  form input[type=submit] {
-    letter-spacing: 1px;
+  .wisdom .quote {
+    width: 300px;
   }
   .footerContainer p {
     text-align: center;
@@ -764,8 +790,20 @@ footer .footerContainer p {
 }
 
 @media (max-width: 320px) {
-  header .hero .heroTitle {
-    font-size: 2rem;
+  header {
+    min-height: 60vh;
+  }
+  header .heroTitle {
+    font-size: 2.5rem;
+  }
+  header .hero .first {
+    top: 126%;
+  }
+  header .hero i {
+    top: 130%;
+  }
+  header .hero p {
+    left: 32.5%;
   }
   form .join {
     display: -webkit-box;
@@ -780,13 +818,15 @@ footer .footerContainer p {
     padding-bottom: 5%;
   }
   form .saber .blueSaber {
-    left: 11%;
+    left: 15%;
   }
   form .saber .redSaber {
-    left: 73%;
+    left: 69.5%;
   }
   form input[type=submit] {
     padding: 8px 0px;
   }
+  .wisdom .quote {
+    width: 255px;
+  }
 }
-/*# sourceMappingURL=styles.css.map */

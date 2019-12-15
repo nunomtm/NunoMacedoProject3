@@ -1,12 +1,11 @@
 form {
-    height: 100vh;
     .join,
     .saber {
         background: $baseBackgroundColor;
-        text-align: center;
         color: $primeryColor;
+        text-align: center;
         margin: 0;
-        padding: 7%;
+        padding: 5%;
         border: none;
         border-bottom: 1px solid $primeryColor;
         p,
@@ -33,11 +32,9 @@ form {
             left: 56%;
         }
     }
-    input[type=radio] {
-        margin-right: 10px;
-    }   
     .submit {
         padding: 60px 0;
+        font-size: 1.8rem;
         text-align: center;
     }
     input[type=submit] {
@@ -45,13 +42,32 @@ form {
         padding: 10px 20px;
         border: none;
         border: 1px solid transparent;
-        transition: 0.25s;
-        transition-delay: 0.1s;
+        transition: 0.35s;
+        transition-delay: 0.15s;
     }
     input[type=submit]:hover, 
     input[type=submit]:focus {
         background: $baseBackgroundColor;
         border: 1px solid $primeryColor;
         color: $primeryColor;
-    }   
+    }
+    input[type=radio] {
+        margin-right: 10px;
+    }
+
+    
 }
+    #swal2-title > strong:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    #swal2-content {
+        font-size: 1.8rem;
+    }
+
+    .swal2-popup {
+        width: 50%;
+    }
+    .swal2-confirm {
+        font-size: 1.6rem;
+    }

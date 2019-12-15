@@ -220,9 +220,19 @@ const rebel = {
     ]
 };
 
-
 // The function will start here
 $(function() {
+
+    $('.moreInfo, i').click(function() {
+        Swal.fire({
+            title: '<strong>How to use the app</strong>',
+            icon: 'info',
+            html:
+                'You will be prompt to answer two question and once you have made your selection, Master Yoda will give a piece of his wisdom. May the force be with you',
+            showCloseButton: true,
+            focusConfirm: false,
+        })
+    })
 
     const playScroll = $(window).scrollTop();
     $('.fa-angle-down, p').click(function () {
@@ -231,8 +241,17 @@ $(function() {
 
     const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
-        $('html, body').animate({scrollTop: wisdomScroll + 970})
-        $('audio#yoda')[0].play()
+        if (($('.join input[type="radio"]:checked').val() === undefined) || ($('.saber input[type="radio"]:checked').val() === undefined)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops... Something went wrong!',
+                text: 'You need to select an answer for both questions.',
+            })
+        } 
+        else {
+            $('html, body').animate({ scrollTop: wisdomScroll + 970 })
+            $('audio#yoda')[0].play()
+        }
     });
 
     function randomQuote(optionArray) {
