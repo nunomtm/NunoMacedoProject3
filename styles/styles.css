@@ -309,6 +309,16 @@ header {
   min-height: 95vh;
 }
 
+header a {
+  margin-left: 2%;
+}
+
+header a .fa-info-circle {
+  font-size: 3rem;
+  color: #fee91c;
+  margin-top: 1%;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +329,7 @@ header {
 
 .hero img {
   width: 65%;
-  padding-top: 80px;
+  padding-top: 40px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
@@ -493,6 +503,22 @@ form input[type=submit]:focus {
 
 form input[type=radio] {
   margin-right: 10px;
+}
+
+#swal2-title > strong:nth-child(1) {
+  font-size: 3rem;
+}
+
+#swal2-content {
+  font-size: 1.8rem;
+}
+
+.swal2-popup {
+  width: 50%;
+}
+
+.swal2-confirm {
+  font-size: 1.6rem;
 }
 
 .wisdom {
@@ -702,7 +728,7 @@ footer .footerContainer p {
 
 @media (max-width: 415px) {
   header {
-    min-height: 38vh;
+    min-height: 43vh;
   }
   header .heroTitle {
     font-size: 2.5rem;
@@ -732,7 +758,7 @@ footer .footerContainer p {
 
 @media (max-width: 375px) {
   header {
-    min-height: 45vh;
+    min-height: 48vh;
   }
   header .heroTitle {
     font-size: 2.2rem;
@@ -765,7 +791,7 @@ footer .footerContainer p {
 
 @media (max-width: 320px) {
   header {
-    min-height: 55vh;
+    min-height: 60vh;
   }
   header .heroTitle {
     font-size: 2.5rem;

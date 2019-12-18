@@ -1,6 +1,25 @@
+<<<<<<< HEAD
 // JS file starts here 
 
 // Object Starts Here
+=======
+// Scope Code
+
+// - My ideia is to have a one page app where the theme is from Star Wars and the user will be able to get some Jedi Wisdom from Master Yoda.
+
+// - Once the page loads they will be prompt to answer two questions: the 1st one would be: "How are you feeling today?" The user would have radion buttons to sleect which one they would like and the otions are, option1 = Rebel / option2 = Dark. The 2nd question would be: "Which lighsaber would you choose?" option1 = Blue / option2 = Red. I would have an image or a gif with the lightsabers beside the radio button. 
+
+// - To randomize the selection of which quote will be displayed I will create two objects arrays, one for Jedi with two key values Red and Blue and inside this values I will have quotes based on if they select Rebel, Red something related to the dark side, if they select Rebel and Blue some good advise from Yoda. I will do the same for the Vader with two key values Red and Blue.
+
+// - Depending on their selection I would have a random quote from Yoda displaying below the two questions and beside Yoda's photo. 
+
+// Strech Goal
+
+// - Increase number of quotes
+// - Have the quote shown in a speaking balloon 
+// - Animate the header and have Yoda with some sort of animation too 
+
+>>>>>>> master
 const rebel = {
     jedi: [
         {
@@ -206,12 +225,30 @@ const rebel = {
         },
     ]
 };
+<<<<<<< HEAD
 // Object Endss Here
 
 
 // The Function Start Here
 $(function() {
 
+=======
+
+// The function will start here
+$(function() {
+
+    $('.moreInfo, i').click(function() {
+        Swal.fire({
+            title: '<strong>How to use the app</strong>',
+            icon: 'info',
+            html:
+                'You will be prompt to answer two question and once you have made your selection, Master Yoda will give a piece of his wisdom. May the force be with you',
+            showCloseButton: true,
+            focusConfirm: false,
+        })
+    })
+
+>>>>>>> master
     const playScroll = $(window).scrollTop();
     $('.fa-angle-down, p').click(function () {
         $('html, body').animate({scrollTop: playScroll + 580})
@@ -219,8 +256,22 @@ $(function() {
 
     const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
+<<<<<<< HEAD
         $('html, body').animate({scrollTop: wisdomScroll + 970})
         $('audio#yoda')[0].play()
+=======
+        if (($('.join input[type="radio"]:checked').val() === undefined) || ($('.saber input[type="radio"]:checked').val() === undefined)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops... Something went wrong!',
+                text: 'You need to select an answer for both questions.',
+            })
+        } 
+        else {
+            $('html, body').animate({ scrollTop: wisdomScroll + 970 })
+            $('audio#yoda')[0].play()
+        }
+>>>>>>> master
     });
 
     function randomQuote(optionArray) {
@@ -247,6 +298,11 @@ $(function() {
 
         $('.quote').css('display', 'block');
 
+<<<<<<< HEAD
     });
 });
 // Function Ends Here
+=======
+    });  
+});
+>>>>>>> master
