@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// JS file starts here 
-
-// Object Starts Here
-=======
 // Scope Code
 
 // - My ideia is to have a one page app where the theme is from Star Wars and the user will be able to get some Jedi Wisdom from Master Yoda.
@@ -19,7 +14,6 @@
 // - Have the quote shown in a speaking balloon 
 // - Animate the header and have Yoda with some sort of animation too 
 
->>>>>>> master
 const rebel = {
     jedi: [
         {
