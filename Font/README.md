@@ -1,3 +1,5 @@
+<img src="YodaWisdom/assets/screenshot.png">
+
 ## Yoda Wisdom
 
 The Yoda Wisdom app is a fun and interactive way to get some of Master Yoda's wisdom based on which side you select, rebel or dark and the color of the saber, blue or red.
