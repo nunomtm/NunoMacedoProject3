@@ -225,14 +225,6 @@ const rebel = {
         },
     ]
 };
-<<<<<<< HEAD
-// Object Endss Here
-
-
-// The Function Start Here
-$(function() {
-
-=======
 
 // The function will start here
 $(function() {
@@ -248,7 +240,6 @@ $(function() {
         })
     })
 
->>>>>>> master
     const playScroll = $(window).scrollTop();
     $('.fa-angle-down, p').click(function () {
         $('html, body').animate({scrollTop: playScroll + 580})
@@ -256,10 +247,6 @@ $(function() {
 
     const wisdomScroll = $(window).scrollTop();
     $('.submit').click(function () {
-<<<<<<< HEAD
-        $('html, body').animate({scrollTop: wisdomScroll + 970})
-        $('audio#yoda')[0].play()
-=======
         if (($('.join input[type="radio"]:checked').val() === undefined) || ($('.saber input[type="radio"]:checked').val() === undefined)) {
             Swal.fire({
                 icon: 'error',
@@ -271,7 +258,6 @@ $(function() {
             $('html, body').animate({ scrollTop: wisdomScroll + 970 })
             $('audio#yoda')[0].play()
         }
->>>>>>> master
     });
 
     function randomQuote(optionArray) {
@@ -298,11 +284,5 @@ $(function() {
 
         $('.quote').css('display', 'block');
 
-<<<<<<< HEAD
-    });
-});
-// Function Ends Here
-=======
     });  
 });
->>>>>>> master
