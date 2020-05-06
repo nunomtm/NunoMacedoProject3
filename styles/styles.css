@@ -570,7 +570,7 @@ footer .footerContainer p {
   color: #fee91c;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1026px) {
   header {
     min-height: 75vh;
   }
@@ -731,7 +731,7 @@ footer .footerContainer p {
 
 @media (max-width: 415px) {
   header {
-    min-height: 43vh;
+    min-height: 35vh;
   }
   header .heroTitle {
     font-size: 2.5rem;
@@ -761,7 +761,7 @@ footer .footerContainer p {
 
 @media (max-width: 375px) {
   header {
-    min-height: 48vh;
+    min-height: 40vh;
   }
   header .heroTitle {
     font-size: 2.2rem;
