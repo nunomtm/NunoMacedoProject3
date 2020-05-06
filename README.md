@@ -10,6 +10,7 @@ The Yoda Wisdom app is a fun and interactive way to get some of Master Yoda's wi
 [SASS](https://sass-lang.com/) </br>
 [JavaScript](https://www.javascript.com/) </br>
 [jQuery](https://jquery.com/) </br>
+[and me!]
 
 ### Author
 Nuno Macedo - [nunomtm](https://github.com/nunomtm)</br>
