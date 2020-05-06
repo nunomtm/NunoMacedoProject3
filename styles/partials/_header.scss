@@ -2,8 +2,7 @@ header {
     background-image: url(../assets/starWarsBackgrounds.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
-    min-height: 90vh;
+    min-height: 95vh;
     a {
         margin-left: 2%;
         .fa-info-circle {
@@ -11,119 +10,116 @@ header {
             color: $primeryColor;
             margin-top: 1%;
         }
-
     }
-}
-  
-.hero {
-    display: flex;
-    perspective: 1000px;
-    img {
-        width: 65%; 
-        padding-top: 40px;
-        // Image Animmation
-        animation-duration: 5s;
-    }
-    .titleContainer {
+    .hero {
         display: flex;
-        align-items: center;
-        overflow: hidden;
-        transform: rotateX(40deg);
+        perspective: 1000px;
+        img {
+            width: 60%; 
+            padding-top: 40px;
+            // Image Animmation
+            animation-duration: 5s;
+        }
+        .titleContainer {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            transform: rotateX(40deg);
+            .heroTitle {
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        //Style the arrow down
+        .first {
+            font-size: 3.8rem;
+            color: $primeryColor;
+            position: absolute;
+            top: 105%;
+            left: 46%;
+        }
+        i {
+            font-size: 4.5rem;
+            color: $primeryColor;
+            position: absolute;
+            top: 107%;
+            left: 45.8%;
+        }
+        //Styles end here
+        p {
+            font-size: 1.8rem;
+            font-style: italic;
+            color: $primeryColor;
+            position: absolute;
+            top: 111%;
+            left: 42.5%;
+        }
     }
-    .heroTitle {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
+    // Hero Img Animation Starts Here
+    @-webkit-keyframes slideInLeft {
+        from {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+    
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
     }
-    //Style the arrow down
-    .first {
-        color: $primeryColor;
-        font-size: 3.8rem;
-        position: absolute;
-        top: 105%;
-        left: 46%;
+    
+    @keyframes slideInLeft {
+        from {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+    
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
     }
-    i {
-        color: $primeryColor;
-        font-size: 4.5rem;
-        position: absolute;
-        top: 107%;
-        left: 45.8%;
+    
+    .slideInLeft {
+        -webkit-animation-name: slideInLeft;
+        animation-name: slideInLeft;
     }
-    //Styles end here
-    p {
-        font-size: 1.8rem;
-        font-style: italic;
-        color: $primeryColor;
-        position: absolute;
-        top: 111%;
-        left: 42.5%;
+    // Hero Img Animation Ends Here
+    
+    // Animation styles start for the .hereTitle
+    @-webkit-keyframes slideInUp {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+    
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
     }
+    
+    @keyframes slideInUp {
+        from {
+            -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+            visibility: visible;
+        }
+    
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    .slideInUp {
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+    }
+    //Animation styles ends for the .heroTitle
 }
 
-
-// Hero Img Animation Starts Here
-@-webkit-keyframes slideInLeft {
-    from {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.slideInLeft {
-    -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft;
-}
-// Hero Img Animation Ends Here
-
-// Animation styles start for the .hereTitle
-@-webkit-keyframes slideInUp {
-    from {
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        -webkit-transform: translate3d(0, 200%, 0);
-        transform: translate3d(0, 200%, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.slideInUp {
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
-//Animation styles ends for the .heroTitle

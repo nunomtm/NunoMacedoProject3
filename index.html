@@ -33,37 +33,39 @@
         </div>
     </header>
 
-    <form action="">
-        <fieldset class="join">
-            <p>Joining today who do you feel like?</p>
-            <input type="radio" name="join" id="rebel" value="jedi">
-            <label for="rebel">Resistance <i class="fas fa-jedi"></i></label>
+    <main>
+        <form action="">
+            <fieldset class="join">
+                <p>Joining today who do you feel like?</p>
+                <input type="radio" name="join" id="rebel" value="jedi">
+                <label for="rebel">Resistance <i class="fas fa-jedi"></i></label>
+    
+                <input type="radio" name="join" id="dark" value="vader">
+                <label for="dark">Dark Side <i class="fab fa-galactic-republic"></i></label>
+            </fieldset>
+    
+            <fieldset class="saber">
+                <p>Would you choose what color lightsaber?</p>
+                <input type="radio" name="saber" id="blue" value="blue">
+                <label for="blue">Blue</label> 
+                <img class="blueSaber" src="./assets/blueLightsaber.png" alt="">
+    
+                <input type="radio" name="saber" id="red" value="red">
+                <label for="red">Red</label>
+                <img class="redSaber" src="./assets/redLightsaber.png" alt="">
+            </fieldset>
+                <div class="submit">
+                    <input type="submit" value="Get Master Yoda Wisdom">
+                </div>
+        </form>
 
-            <input type="radio" name="join" id="dark" value="vader">
-            <label for="dark">Dark Side <i class="fab fa-galactic-republic"></i></label>
-        </fieldset>
-
-        <fieldset class="saber">
-            <p>Would you choose what color lightsaber?</p>
-            <input type="radio" name="saber" id="blue" value="blue">
-            <label for="blue">Blue</label> 
-            <img class="blueSaber" src="./assets/blueLightsaber.png" alt="">
-
-            <input type="radio" name="saber" id="red" value="red">
-            <label for="red">Red</label>
-            <img class="redSaber" src="./assets/redLightsaber.png" alt="">
-        </fieldset>
-            <div class="submit">
-                <input type="submit" value="Get Master Yoda Wisdom">
+        <section class="wisdom wrapper">
+            <div>
+                <img src="./assets/Yoda.gif" alt="gif of Yoda moving his head up and closing his eyes as he is thinking">
             </div>
-    </form>
-
-    <section class="wisdom wrapper">
-        <div>
-            <img src="./assets/Yoda.gif" alt="gif of Yoda moving his head up and closing his eyes as he is thinking">
-        </div>
-        <div class="quote"></div>
-    </section>
+            <div class="quote"></div>
+        </section>
+    </main>
 
     <footer>
         <div class="footerContainer wrapper">

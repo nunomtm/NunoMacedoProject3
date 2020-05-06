@@ -1,6 +1,9 @@
 .wisdom {
     display: flex;
     margin-bottom: 50px;
+    img {
+        display: none;
+    }
     .quote {
         font-family: $secondaryFont;
         font-size: 2rem;

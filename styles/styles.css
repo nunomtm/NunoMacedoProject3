@@ -305,7 +305,6 @@ header {
   background-image: url(../assets/starWarsBackgrounds.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 50%;
   min-height: 95vh;
 }
 
@@ -319,7 +318,7 @@ header a .fa-info-circle {
   margin-top: 1%;
 }
 
-.hero {
+header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,14 +326,14 @@ header a .fa-info-circle {
           perspective: 1000px;
 }
 
-.hero img {
-  width: 65%;
+header .hero img {
+  width: 60%;
   padding-top: 40px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
 
-.hero .titleContainer {
+header .hero .titleContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,29 +345,29 @@ header a .fa-info-circle {
           transform: rotateX(40deg);
 }
 
-.hero .heroTitle {
+header .hero .titleContainer .heroTitle {
   display: inline-block;
   width: 100%;
   margin: 0;
 }
 
-.hero .first {
-  color: #fee91c;
+header .hero .first {
   font-size: 3.8rem;
+  color: #fee91c;
   position: absolute;
   top: 105%;
   left: 46%;
 }
 
-.hero i {
-  color: #fee91c;
+header .hero i {
   font-size: 4.5rem;
+  color: #fee91c;
   position: absolute;
   top: 107%;
   left: 45.8%;
 }
 
-.hero p {
+header .hero p {
   font-size: 1.8rem;
   font-style: italic;
   color: #fee91c;
@@ -401,7 +400,7 @@ header a .fa-info-circle {
   }
 }
 
-.slideInLeft {
+header .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
@@ -430,7 +429,7 @@ header a .fa-info-circle {
   }
 }
 
-.slideInUp {
+header .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
@@ -526,6 +525,10 @@ form input[type=radio] {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+}
+
+.wisdom img {
+  display: none;
 }
 
 .wisdom .quote {

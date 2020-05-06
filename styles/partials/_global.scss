@@ -3,27 +3,22 @@
 html {
     font-size: 62.5%;
 }
-
 * {
     cursor: url(../assets/mouseLightSaber.png), auto;
 }
-
 body {
     margin: 0 auto;
     background-color: $baseBackgroundColor;
 }
-
 .wrapper {
     max-width: 1080px;
     width: 80%;
     margin: 0 auto;
 }
-
 img {
     max-width: 100%;
     display: block;
 }
-
 h1 {
     font-family: "StarWars";
     font-size: 7.5rem;
@@ -34,12 +29,10 @@ h1 {
     line-height: 1.6;
     margin: 0;
 }
-
 input[type=submit] {
     font-family: "StarWars";
     letter-spacing: 3px;
 }
-
 p,
 label,
 input {
@@ -55,7 +48,6 @@ input {
     background: $secondaryBackgroundColor;
     color: black;
 }
-
 .skipLink:focus {
     left: 0;
 }
