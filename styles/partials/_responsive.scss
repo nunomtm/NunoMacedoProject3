@@ -128,8 +128,10 @@
     header {
         .hero {
             padding-top: 30px;
+            justify-content: center;
             img {
-                width: 100%;
+                width: 70%;
+                height: 50%;
             }
             .titleContainer {
                 width: 100%;
@@ -157,6 +159,15 @@
                     font-size: 3.5rem;
                 }
             }
+            .arrows {
+                margin-top: 90px;
+            }
+        }
+    }
+    form {
+        .join,
+        .saber {
+            padding: 55px 10px;
         }
     }
     .wisdom {

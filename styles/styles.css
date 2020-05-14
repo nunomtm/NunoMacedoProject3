@@ -730,9 +730,13 @@ footer .footerContainer p {
 @media (max-width: 415px) {
   header .hero {
     padding-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   header .hero img {
-    width: 100%;
+    width: 70%;
+    height: 50%;
   }
   header .hero .titleContainer {
     width: 100%;
@@ -751,6 +755,13 @@ footer .footerContainer p {
 @media (max-width: 375px) {
   header .hero .titleContainer .heroTitle {
     font-size: 3.5rem;
+  }
+  header .hero .arrows {
+    margin-top: 90px;
+  }
+  form .join,
+  form .saber {
+    padding: 55px 10px;
   }
   .wisdom .quote {
     width: 300px;
