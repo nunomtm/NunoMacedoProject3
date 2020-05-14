@@ -750,6 +750,9 @@ footer .footerContainer p {
   .wisdom .quote {
     width: 320px;
   }
+  .swal2-popup {
+    width: 95%;
+  }
 }
 
 @media (max-width: 375px) {

@@ -149,6 +149,9 @@
             width: 320px;
         }
     }  
+    .swal2-popup {
+        width: 95%;
+    }
 }
 
 @include mqMobileX {

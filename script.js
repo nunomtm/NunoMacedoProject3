@@ -221,7 +221,7 @@ $(function() {
             title: '<strong>How to use the app</strong>',
             icon: 'info',
             html:
-                'You will be prompt to answer two questions and once you have made your selection, Master Yoda will give a piece of his wisdom. May the force be with you',
+                'You will be prompt to answer two questions and once you have made your selection, Master Yoda will give a piece of his wisdom. May the force be with you!',
             showCloseButton: true,
             focusConfirm: false,
         });
