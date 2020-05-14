@@ -772,6 +772,9 @@ footer .footerContainer p {
   .footerContainer p {
     text-align: center;
   }
+  .swal2-popup {
+    width: 95%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -815,6 +818,9 @@ footer .footerContainer p {
   }
   .wisdom .quote {
     width: 255px;
+  }
+  .swal2-popup {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

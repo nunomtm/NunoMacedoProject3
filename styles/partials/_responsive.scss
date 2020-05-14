@@ -181,6 +181,9 @@
     .footerContainer p {
         text-align: center;
     }
+    .swal2-popup {
+        width: 95%;
+    }
 }
 
 @include mqMobileSE {
@@ -236,6 +239,9 @@
         .quote {
             width: 255px;
         }
-    }  
+    }
+    .swal2-popup {
+        width: 95%;
+    }
 }
 // Responsive Ends Here
