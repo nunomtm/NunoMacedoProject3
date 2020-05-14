@@ -655,7 +655,7 @@ footer .footerContainer p {
     padding-right: 20px;
   }
   header .hero .arrows {
-    margin-top: 200px;
+    margin-top: 900px;
   }
   form .join,
   form .saber {
@@ -779,19 +779,17 @@ footer .footerContainer p {
 
 @media (max-width: 320px) {
   header .hero {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-top: 0;
   }
   header .hero img {
-    width: 70%;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
   }
   header .hero .titleContainer .heroTitle {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   header .hero .arrows {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   header .hero .arrows .first {
     font-size: 2.8rem;
@@ -804,13 +802,21 @@ footer .footerContainer p {
   }
   form .join,
   form .saber {
-    padding: 45px 10px;
+    margin: 0;
+    padding: 0px 10px;
+  }
+  form .join p,
+  form .saber p {
+    margin: 5px 0;
   }
   form .join .joinContainer label {
     font-size: 1.8rem;
   }
   form .join .joinContainer label:nth-child(2) {
     margin-right: 18px;
+  }
+  form .submit {
+    padding: 10px 0;
   }
   form .submit input[type=submit] {
     font-size: 1.4rem;
