@@ -626,6 +626,10 @@ footer .footerContainer p {
   header .hero img {
     width: 40%;
   }
+  form .join,
+  form .saber {
+    padding: 80px 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -652,6 +656,10 @@ footer .footerContainer p {
   }
   header .hero .arrows {
     margin-top: 200px;
+  }
+  form .join,
+  form .saber {
+    padding: 130px 10px;
   }
   .wisdom {
     -webkit-box-orient: vertical;
@@ -701,6 +709,10 @@ footer .footerContainer p {
   }
   header .hero .titleContainer .heroTitle {
     font-size: 3.5rem;
+  }
+  form .join,
+  form .saber {
+    padding: 100px 10px;
   }
   form .join p,
   form .saber p {
@@ -772,6 +784,10 @@ footer .footerContainer p {
   }
   header .hero .arrows a {
     font-size: 1.6rem;
+  }
+  form .join,
+  form .saber {
+    padding: 45px 10px;
   }
   form .join .joinContainer label {
     font-size: 1.8rem;

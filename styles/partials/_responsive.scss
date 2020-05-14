@@ -7,6 +7,12 @@
             }
         }
     }
+    form {
+        .join,
+        .saber {
+            padding: 80px 10px;
+        }
+    }
 }
 
 @include mqTabletLand {
@@ -42,6 +48,12 @@
             .arrows {
                 margin-top: 200px;
             }
+        }
+    }
+    form {
+        .join,
+        .saber {
+            padding: 130px 10px;
         }
     }
     .wisdom {
@@ -98,6 +110,7 @@
     form {
         .join, 
         .saber {
+            padding: 100px 10px;
             p {
                 font-size: 2.4rem;
             }
@@ -184,6 +197,10 @@
         }
     }
     form {
+        .join,
+        .saber {
+            padding: 45px 10px;
+        }
         .join {
             .joinContainer {
                label {
