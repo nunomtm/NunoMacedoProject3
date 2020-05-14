@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <link rel='icon' href='./assets/favicon.ico' type='image/x-icon'/>
+    <link rel='icon' href='./assets/favicon.ico' type='image/x-icon' />
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Yoda Wisdom</title>
 </head>
+
 <body>
     <!-- Skip-link for accessibility -->
     <a href="header" class="skipLink">Skip to main content.</a>
@@ -23,13 +25,16 @@
             <i class="fas fa-info-circle"></i>
         </a>
         <div class="hero wrapper">
-            <img class="animated slideInLeft slower 10s" src="./assets/headerYoda.png" alt="Yoda stending with is hand up and on the other hand he has his cain">  
+            <img class="animated slideInLeft slower 10s" src="./assets/headerYoda.png"
+                alt="Yoda stending with is hand up and on the other hand he has his cain">
             <div class="titleContainer">
                 <h1 class="heroTitle animated slideInUp slower 10s wrapper">With You May The Wisdom Be</h1>
             </div>
-            <i class="first animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
-            <i class="animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
-            <p>Click to Play</p>
+            <div class="arrows">
+                <i class="first animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
+                <i class="animated infinite bounce delay-2s slower 10s fas fa-angle-down"></i>
+                <p>Click to Play</p>
+            </div>
         </div>
     </header>
 
@@ -37,31 +42,45 @@
         <form action="">
             <fieldset class="join">
                 <p>Joining today who do you feel like?</p>
-                <input type="radio" name="join" id="rebel" value="jedi">
-                <label for="rebel">Resistance <i class="fas fa-jedi"></i></label>
-    
-                <input type="radio" name="join" id="dark" value="vader">
-                <label for="dark">Dark Side <i class="fab fa-galactic-republic"></i></label>
+                <div class="joinContainer">
+                    <div class="jediSide">
+                        <input type="radio" name="join" id="rebel" value="jedi">
+                        <label for="rebel">Resistance <i class="fas fa-jedi"></i></label>
+                    </div>
+
+                    <div class="rebelSide">
+                        <input type="radio" name="join" id="dark" value="vader">
+                        <label for="dark">Dark Side <i class="fab fa-galactic-republic"></i></label>
+                    </div>
+                </div>
             </fieldset>
-    
+
             <fieldset class="saber">
                 <p>Would you choose what color lightsaber?</p>
-                <input type="radio" name="saber" id="blue" value="blue">
-                <label for="blue">Blue</label> 
-                <img class="blueSaber" src="./assets/blueLightsaber.png" alt="">
-    
-                <input type="radio" name="saber" id="red" value="red">
-                <label for="red">Red</label>
-                <img class="redSaber" src="./assets/redLightsaber.png" alt="">
-            </fieldset>
-                <div class="submit">
-                    <input type="submit" value="Get Master Yoda Wisdom">
+
+                <div class="saberContainer">
+                    <div class="blueSide">
+                        <img class="blueSaber" src="./assets/blueLightsaber.png" alt="blue lightsaber">
+                        <input type="radio" name="saber" id="blue" value="blue">
+                        <label for="blue">Blue</label>
+                    </div>
+
+                    <div class="redSide">
+                        <input type="radio" name="saber" id="red" value="red">
+                        <label for="red">Red</label>
+                        <img class="redSaber" src="./assets/redLightsaber.png" alt="red lightsaber">
+                    </div>
                 </div>
+            </fieldset>
+            <div class="submit">
+                <input type="submit" value="Get Master Yoda Wisdom">
+            </div>
         </form>
 
         <section class="wisdom wrapper">
             <div>
-                <img src="./assets/Yoda.gif" alt="gif of Yoda moving his head up and closing his eyes as he is thinking">
+                <img src="./assets/Yoda.gif"
+                    alt="gif of Yoda moving his head up and closing his eyes as he is thinking">
             </div>
             <div class="quote"></div>
         </section>
@@ -82,4 +101,5 @@
     <script src="./script.js"></script>
 
 </body>
+
 </html>
