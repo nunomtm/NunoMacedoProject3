@@ -221,15 +221,10 @@ $(function() {
             title: '<strong>How to use the app</strong>',
             icon: 'info',
             html:
-                'You will be prompt to answer two question and once you have made your selection, Master Yoda will give a piece of his wisdom. May the force be with you',
+                'You will be prompt to answer two questions and once you have made your selection, Master Yoda will give a piece of his wisdom. May the force be with you',
             showCloseButton: true,
             focusConfirm: false,
         });
-    });
-
-    const playScroll = $(window).scrollTop();
-    $('.fa-angle-down, p').click(function() {
-        $('html, body').animate({ scrollTop: playScroll + 865 });
     });
 
     const wisdomScroll = $(window).scrollTop();
@@ -244,7 +239,7 @@ $(function() {
                 text: 'You need to select an answer for both questions.',
             });
         } else {
-            $('html, body').animate({ scrollTop: wisdomScroll + 970 });
+            $('html, body').animate({ scrollTop: wisdomScroll + 1500 });
             $('audio#yoda')[0].play();
         }
     });

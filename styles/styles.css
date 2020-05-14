@@ -240,12 +240,13 @@ html {
   src: url(../Font/starWarsFont.ttf) format("truetype");
 }
 
-html {
-  font-size: 62.5%;
-}
-
 * {
   cursor: url(../assets/mouseLightSaber.png), auto;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -281,6 +282,7 @@ input[type=submit] {
 }
 
 p,
+a,
 label,
 input {
   font-family: 'Kanit', sans-serif;
@@ -387,9 +389,10 @@ header .hero .arrows i {
   top: 10%;
 }
 
-header .hero .arrows p {
+header .hero .arrows a {
   font-size: 1.8rem;
   font-style: italic;
+  text-decoration: none;
   color: #fee91c;
   margin-top: 45px;
 }
@@ -462,7 +465,7 @@ form .saber {
   color: #fee91c;
   text-align: center;
   margin: 0;
-  padding: 150px 10px;
+  padding: 130px 10px;
   border: none;
   border-bottom: 1px solid #fee91c;
 }
@@ -767,7 +770,7 @@ footer .footerContainer p {
   header .hero .arrows i {
     font-size: 3.8rem;
   }
-  header .hero .arrows p {
+  header .hero .arrows a {
     font-size: 1.6rem;
   }
   form .join .joinContainer label {

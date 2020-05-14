@@ -57,9 +57,10 @@ header {
                 top: 10%;
             }
             //Styles end here
-            p {
+            a {
                 font-size: 1.8rem;
                 font-style: italic;
+                text-decoration: none;
                 color: $primeryColor;
                 margin-top: 45px;
             }
