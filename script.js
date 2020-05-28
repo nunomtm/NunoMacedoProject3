@@ -255,7 +255,6 @@ $(function() {
         const saberOption = $('input[name=saber]:checked').val();
 
         const selection = rebel[joinOption];
-        const option = rebel[joinOption];
         const color = selection.filter(choice => {
             if (choice.color === saberOption) {
                 return true;
